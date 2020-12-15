@@ -1,0 +1,7 @@
+BasedOnStyle: Google
+AccessModifierOffset: -2
+AllowShortFunctionsOnASingleLine: None
+IncludeBlocks: Merge
+IndentWidth: 4
+TabWidth: 4
+ColumnLimit: 0
