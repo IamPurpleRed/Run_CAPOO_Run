@@ -15,8 +15,10 @@ RunCapooRun::RunCapooRun(QWidget* parent)
     window = 0;               // main window : 0, game window : 1
     pos = 2;                  // capoo's position (0~4), x = 225  ps.the (center, bottom) of the window is (600, 720)
     capoo = 1;                // capoo's status
-    timer = startTimer(100);  //capoo's timer
+    timer = startTimer(100);  // initial timer
+    frequency = 100;          // initial frequency
     countdown = 1;            // for countdown window usage
+    movingTimer = 0;          // counting time (1 time per second
 }
 
 void RunCapooRun::paintEvent(QPaintEvent*) {
@@ -41,7 +43,10 @@ void RunCapooRun::paintEvent(QPaintEvent*) {
 
     // countdown window
     else if (window == 2) {
-        if (countdown > 30) window = 1;  // end countdown
+        if (countdown > 30) {
+            window = 1;    // end countdown
+            test_pos = 1;  // test to move objects
+        }
 
         // background pic
         pixmap.load(".\\src\\background\\XP_blur.png");
@@ -79,12 +84,17 @@ void RunCapooRun::paintEvent(QPaintEvent*) {
 
     // gaming window
     else if (window == 1) {
+        //delete the timer and create a new one
+        killTimer(timer);
+        timer = startTimer(frequency);  // capoo's timer
+
         // background pic
         pixmap.load(".\\src\\background\\XP_plus.png");
         painter.drawPixmap(0, 0, pixmap);
 
         // wall pic
         pixmap.load(".\\src\\grass\\grass1.png");
+        painter.drawPixmap(test_pos * 100, 0, pixmap);
 
         // capoo gif
         if (capoo == 1)
@@ -122,5 +132,14 @@ void RunCapooRun::mouseReleaseEvent(QMouseEvent* evt) {
 }
 
 void RunCapooRun::timerEvent(QTimerEvent* evt) {
-    repaint();
+    repaint();  //refresh
+
+    movingTimer++;  // count to 1 sec, per "movingTimer" is a "100 micro sec"
+
+    // when it accumulates to 1 sec, reset the counter and push the map
+    if (movingTimer == 10) {
+        movingTimer = 0;
+        test_pos++;
+        if (frequency > 0) frequency -= 1;  // let game getting faster
+    }
 }

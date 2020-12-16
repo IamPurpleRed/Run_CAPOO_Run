@@ -22,4 +22,7 @@ class RunCapooRun : public QMainWindow {
     int capoo;
     int timer;
     int countdown;
+    int movingTimer;
+    int test_pos;
+    int frequency;
 };
