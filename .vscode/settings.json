@@ -1,0 +1,53 @@
+{
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, TabWidth: 4, ColumnLimit: 0, AllowShortFunctionsOnASingleLine: None, IncludeBlocks: Merge, AccessModifierOffset: -2 }",
+    "todo-tree.general.tags": [
+        "TODO",
+        "FIXME",
+        "BUG",
+        "DONE",
+        "SOLVED",
+        "NOTE",
+        "INFO"
+    ],
+    "todo-tree.highlights.defaultHighlight": {
+        "foreground": "#fff",
+        "type": "line"
+    },
+    "todo-tree.highlights.customHighlight": {
+        "TODO": {
+            "background": "#FF8000",
+            "icon": "list-ordered",
+            "iconColour": "#FF8000"
+        },
+        "FIXME": {
+            "background": "#c00",
+            "icon": "tools",
+            "iconColour": "#c00"
+        },
+        "BUG": {
+            "background": "#BB5E00",
+            "icon": "bug",
+            "iconColour": "#BB5E00"
+        },
+        "DONE": {
+            "background": "#0c0",
+            "icon": "check",
+            "iconColour": "#0c0"
+        },
+        "SOLVED": {
+            "background": "#090",
+            "icon": "issue-closed",
+            "iconColour": "#090"
+        },
+        "NOTE": {
+            "background": "#4A4AFF",
+            "icon": "repo",
+            "iconColour": "#4A4AFF"
+        },
+        "INFO": {
+            "background": "#2894FF",
+            "icon": "info",
+            "iconColour": "#2894FF"
+        }
+    }
+}
