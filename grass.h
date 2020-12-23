@@ -13,6 +13,7 @@ class grass {
 
   private:
     int grass_num;  // 判斷該列有幾個 grass
+    int grass_position;
     int road[5];
 };
 
