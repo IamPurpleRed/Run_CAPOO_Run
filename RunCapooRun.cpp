@@ -11,26 +11,21 @@ RunCapooRun::RunCapooRun(QWidget* parent)
     : QMainWindow(parent) {
     ui.setupUi(this);
 
-    startClick = 0;   // click of the start botton
-    window = 0;       // main window : 0, game window : 1, countdown window : 2
-    pos = 2;          // capoo's position (0~4), x = 225  ps.the (center, bottom) of the window is (600, 720)
-    capoo = 1;        // capoo's status
-    frequency = 100;  // initial frequency
-    countdown = 1;    // for countdown window usage
-    movingTimer = 0;  // counting time (1 time per second
-    setObsTable();    // set obstacle coordinate table
+    startClick = 0;      // click of the start botton
+    window = 0;          // main window : 0, game window : 1, countdown window : 2, gameover window : 3
+    pos = 2;             // capoo's position (0~4), x = 225  ps.the (center, bottom) of the window is (600, 720)
+    capoo = 1;           // capoo's status
+    frequency = 100;     // initial frequency
+    countdown = 1;       // for countdown window usage
+    movingTimer = 0;     // counting time (1 time per second
+    setObsTable();       // set obstacle coordinate table
+    ending_counter = 0;  //initialize counter
 }
 
 void RunCapooRun::paintEvent(QPaintEvent*) {
     // print window
     QPixmap pixmap;
     QPainter painter(this);
-
-    if (flag == 1) {
-        pixmap.load(".\\src\\original\\bug.jpg");
-        painter.drawPixmap(0, 0, pixmap);
-        timer = startTimer(10);
-    }
 
     // starting window
     if (window == 0) {
@@ -49,52 +44,6 @@ void RunCapooRun::paintEvent(QPaintEvent*) {
         }
     }
 
-    // countdown window
-    else if (window == 2) {
-        killTimer(timer);         // kill the previous timer
-        timer = startTimer(100);  // set a new timer
-        if (countdown > 30) {
-            window = 1;  // end countdown
-            // initialize everything in gaming window
-            frequency = 100;
-            create_counter = 0;
-            movingTimer = 0;
-        }
-
-        // background pic
-        pixmap.load(".\\src\\background\\XP_blur.png");
-        painter.drawPixmap(0, 0, pixmap);
-
-        // countdown gif
-        if (countdown % 7 == 1 && countdown < 22)
-            pixmap.load(".\\src\\countdown\\1.png");  // mutual pic (head 1
-        else if (countdown % 7 == 2 && countdown < 22)
-            pixmap.load(".\\src\\countdown\\2.png");  // mutual pic (head 2
-        else if ((countdown % 7 == 5 || countdown % 7 == 6) && countdown < 22)
-            pixmap.load(".\\src\\countdown\\0.png");  // mutual pic (body
-        else if (countdown % 7 == 0 && countdown < 22)
-            pixmap.load(".\\src\\countdown\\5.png");  // mutual pic (last
-        else if (countdown == 3)
-            pixmap.load(".\\src\\countdown\\31.png");  // count 3
-        else if (countdown == 4)
-            pixmap.load(".\\src\\countdown\\32.png");
-        else if (countdown == 10)
-            pixmap.load(".\\src\\countdown\\21.png");  // count 2
-        else if (countdown == 11)
-            pixmap.load(".\\src\\countdown\\22.png");
-        else if (countdown == 17)
-            pixmap.load(".\\src\\countdown\\11.png");  // count 1
-        else if (countdown == 18)
-            pixmap.load(".\\src\\countdown\\12.png");
-        else if (countdown >= 22 && countdown % 2 == 0)
-            pixmap.load(".\\src\\capoo_scared\\1.png");  // AAAAAAHHHHHHHHHHH
-        else if (countdown >= 23 && countdown % 2 == 1)
-            pixmap.load(".\\src\\capoo_scared\\2.png");  // AAAAAAHHHHHHHHHHH
-        countdown++;
-
-        painter.drawPixmap(0, 0, pixmap);
-    }
-
     // gaming window
     else if (window == 1) {
         //delete the timer and create a new one
@@ -106,101 +55,349 @@ void RunCapooRun::paintEvent(QPaintEvent*) {
         painter.drawPixmap(0, 0, pixmap);
 
         // layout grass
-        pixmap.load(".\\src\\grass\\9.png");
-        //painter.drawPixmap(obstacle_table[1][9][0], obstacle_table[1][9][1], pixmap);
-        for (int i = 0; i < 5; i++) {
-            if (*(&row9.send() + i) == 0) {
-                painter.drawPixmap(obstacle_table[i][9][0], obstacle_table[i][9][1], pixmap);
+        {
+            pixmap.load(".\\src\\grass\\9.png");
+            //painter.drawPixmap(obstacle_table[1][9][0], obstacle_table[1][9][1], pixmap);
+            for (int i = 0; i < 5; i++) {
+                if (*(&row9.send() + i) == 0) {
+                    painter.drawPixmap(obstacle_table[i][9][0], obstacle_table[i][9][1], pixmap);
+                }
+            }
+            pixmap.load(".\\src\\grass\\8.png");
+            //painter.drawPixmap(obstacle_table[0][8][0], obstacle_table[0][8][1], pixmap);
+            for (int i = 0; i < 5; i++) {
+                if (*(&row8.send() + i) == 0) {
+                    painter.drawPixmap(obstacle_table[i][8][0], obstacle_table[i][8][1], pixmap);
+                }
+            }
+            pixmap.load(".\\src\\grass\\7.png");
+            for (int i = 0; i < 5; i++) {
+                if (*(&row7.send() + i) == 0) {
+                    painter.drawPixmap(obstacle_table[i][7][0], obstacle_table[i][7][1], pixmap);
+                }
+            }
+            pixmap.load(".\\src\\grass\\6.png");
+            for (int i = 0; i < 5; i++) {
+                if (*(&row6.send() + i) == 0) {
+                    painter.drawPixmap(obstacle_table[i][6][0], obstacle_table[i][6][1], pixmap);
+                }
+            }
+            pixmap.load(".\\src\\grass\\5.png");
+            //painter.drawPixmap(obstacle_table[3][5][0], obstacle_table[3][5][1], pixmap);
+            for (int i = 0; i < 5; i++) {
+                if (*(&row5.send() + i) == 0) {
+                    painter.drawPixmap(obstacle_table[i][5][0], obstacle_table[i][5][1], pixmap);
+                }
+            }
+            pixmap.load(".\\src\\grass\\4.png");
+            for (int i = 0; i < 5; i++) {
+                if (*(&row4.send() + i) == 0) {
+                    painter.drawPixmap(obstacle_table[i][4][0], obstacle_table[i][4][1], pixmap);
+                }
+            }
+            pixmap.load(".\\src\\grass\\3.png");
+            for (int i = 0; i < 5; i++) {
+                if (*(&row3.send() + i) == 0) {
+                    painter.drawPixmap(obstacle_table[i][3][0], obstacle_table[i][3][1], pixmap);
+                }
+            }
+            pixmap.load(".\\src\\grass\\2.png");
+            for (int i = 0; i < 5; i++) {
+                if (*(&row2.send() + i) == 0) {
+                    painter.drawPixmap(obstacle_table[i][2][0], obstacle_table[i][2][1], pixmap);
+                }
+            }
+            pixmap.load(".\\src\\grass\\1.png");
+            for (int i = 0; i < 5; i++) {
+                if (*(&row1.send() + i) == 0) {
+                    painter.drawPixmap(obstacle_table[i][1][0], obstacle_table[i][1][1], pixmap);
+                }
+            }
+            pixmap.load(".\\src\\grass\\0.png");
+            for (int i = 0; i < 5; i++) {
+                if (*(&row0.send() + i) == 0) {
+                    painter.drawPixmap(obstacle_table[i][0][0], obstacle_table[i][0][1], pixmap);
+                }
             }
         }
-        pixmap.load(".\\src\\grass\\8.png");
-        //painter.drawPixmap(obstacle_table[0][8][0], obstacle_table[0][8][1], pixmap);
-        for (int i = 0; i < 5; i++) {
-            if (*(&row8.send() + i) == 0) {
-                painter.drawPixmap(obstacle_table[i][8][0], obstacle_table[i][8][1], pixmap);
-            }
-        }
-        pixmap.load(".\\src\\grass\\7.png");
-        for (int i = 0; i < 5; i++) {
-            if (*(&row7.send() + i) == 0) {
-                painter.drawPixmap(obstacle_table[i][7][0], obstacle_table[i][7][1], pixmap);
-            }
-        }
-        pixmap.load(".\\src\\grass\\6.png");
-        for (int i = 0; i < 5; i++) {
-            if (*(&row6.send() + i) == 0) {
-                painter.drawPixmap(obstacle_table[i][6][0], obstacle_table[i][6][1], pixmap);
-            }
-        }
-        pixmap.load(".\\src\\grass\\5.png");
-        //painter.drawPixmap(obstacle_table[3][5][0], obstacle_table[3][5][1], pixmap);
-        for (int i = 0; i < 5; i++) {
-            if (*(&row5.send() + i) == 0) {
-                painter.drawPixmap(obstacle_table[i][5][0], obstacle_table[i][5][1], pixmap);
-            }
-        }
-        pixmap.load(".\\src\\grass\\4.png");
-        for (int i = 0; i < 5; i++) {
-            if (*(&row4.send() + i) == 0) {
-                painter.drawPixmap(obstacle_table[i][4][0], obstacle_table[i][4][1], pixmap);
-            }
-        }
-        pixmap.load(".\\src\\grass\\3.png");
-        for (int i = 0; i < 5; i++) {
-            if (*(&row3.send() + i) == 0) {
-                painter.drawPixmap(obstacle_table[i][3][0], obstacle_table[i][3][1], pixmap);
-            }
-        }
-        pixmap.load(".\\src\\grass\\2.png");
-        for (int i = 0; i < 5; i++) {
-            if (*(&row2.send() + i) == 0) {
-                painter.drawPixmap(obstacle_table[i][2][0], obstacle_table[i][2][1], pixmap);
-            }
-        }
-        pixmap.load(".\\src\\grass\\1.png");
-        for (int i = 0; i < 5; i++) {
-            if (*(&row1.send() + i) == 0) {
-                painter.drawPixmap(obstacle_table[i][1][0], obstacle_table[i][1][1], pixmap);
-            }
-        }
-        pixmap.load(".\\src\\grass\\0.png");
-        for (int i = 0; i < 5; i++) {
-            if (*(&row0.send() + i) == 0) {
-                painter.drawPixmap(obstacle_table[i][0][0], obstacle_table[i][0][1], pixmap);
-            }
-        }
-
         // capoo gif
-        if (capoo == 1)
-            pixmap.load(".\\src\\capoo_gif\\1.png");
-        else if (capoo == 2)
-            pixmap.load(".\\src\\capoo_gif\\2.png");
-        else if (capoo == 3)
-            pixmap.load(".\\src\\capoo_gif\\3.png");
-        else if (capoo == 4)
-            pixmap.load(".\\src\\capoo_gif\\4.png");
-        else if (capoo == 5)
-            pixmap.load(".\\src\\capoo_gif\\5.png");
-        else if (capoo == 6)
-            pixmap.load(".\\src\\capoo_gif\\6.png");
-
+        {
+            if (capoo == 1)
+                pixmap.load(".\\src\\capoo_gif\\1.png");
+            else if (capoo == 2)
+                pixmap.load(".\\src\\capoo_gif\\2.png");
+            else if (capoo == 3)
+                pixmap.load(".\\src\\capoo_gif\\3.png");
+            else if (capoo == 4)
+                pixmap.load(".\\src\\capoo_gif\\4.png");
+            else if (capoo == 5)
+                pixmap.load(".\\src\\capoo_gif\\5.png");
+            else if (capoo == 6)
+                pixmap.load(".\\src\\capoo_gif\\6.png");
+        }
         capoo++;
         if (capoo > 6) capoo = 1;
         painter.drawPixmap(250 * pos - 50, 425, pixmap);  // 400 320 -> 450 370
+    }
+
+    // loading window
+    else if (window == 2) {
+        killTimer(timer);         // kill the previous timer
+        timer = startTimer(100);  // set a new timer
+        if (countdown > 50) {
+            window = 1;  // end countdown
+            // initialize everything in gaming window
+            frequency = 100;
+            create_counter = 0;
+            movingTimer = 0;
+        }
+
+        // background pic
+        pixmap.load(".\\src\\loading\\bg.png");
+        painter.drawPixmap(0, 0, pixmap);
+
+        // countdown gif
+        {
+            if (countdown == 0)
+                pixmap.load(".\\src\\loading\\000.jpg");
+            else if (countdown == 1)
+                pixmap.load(".\\src\\loading\\001.jpg");
+            else if (countdown == 2)
+                pixmap.load(".\\src\\loading\\002.jpg");
+            else if (countdown == 3)
+                pixmap.load(".\\src\\loading\\003.jpg");
+            else if (countdown == 4)
+                pixmap.load(".\\src\\loading\\004.jpg");
+            else if (countdown == 5)
+                pixmap.load(".\\src\\loading\\005.jpg");
+            else if (countdown == 6)
+                pixmap.load(".\\src\\loading\\006.jpg");
+            else if (countdown == 7)
+                pixmap.load(".\\src\\loading\\007.jpg");
+            else if (countdown == 8)
+                pixmap.load(".\\src\\loading\\008.jpg");
+            else if (countdown == 9)
+                pixmap.load(".\\src\\loading\\009.jpg");
+            else if (countdown == 10)
+                pixmap.load(".\\src\\loading\\010.jpg");
+            else if (countdown == 11)
+                pixmap.load(".\\src\\loading\\011.jpg");
+            else if (countdown == 12)
+                pixmap.load(".\\src\\loading\\012.jpg");
+            else if (countdown == 13)
+                pixmap.load(".\\src\\loading\\013.jpg");
+            else if (countdown == 14)
+                pixmap.load(".\\src\\loading\\014.jpg");
+            else if (countdown == 15)
+                pixmap.load(".\\src\\loading\\015.jpg");
+            else if (countdown == 16)
+                pixmap.load(".\\src\\loading\\016.jpg");
+            else if (countdown == 17)
+                pixmap.load(".\\src\\loading\\017.jpg");
+            else if (countdown == 18)
+                pixmap.load(".\\src\\loading\\018.jpg");
+            else if (countdown == 19)
+                pixmap.load(".\\src\\loading\\019.jpg");
+            else if (countdown == 20)
+                pixmap.load(".\\src\\loading\\020.jpg");
+            else if (countdown == 21)
+                pixmap.load(".\\src\\loading\\021.jpg");
+            else if (countdown == 22)
+                pixmap.load(".\\src\\loading\\022.jpg");
+            else if (countdown == 23)
+                pixmap.load(".\\src\\loading\\023.jpg");
+            else if (countdown == 24)
+                pixmap.load(".\\src\\loading\\024.jpg");
+            else if (countdown == 25)
+                pixmap.load(".\\src\\loading\\025.jpg");
+            else if (countdown == 26)
+                pixmap.load(".\\src\\loading\\026.jpg");
+            else if (countdown == 27)
+                pixmap.load(".\\src\\loading\\027.jpg");
+            else if (countdown == 28)
+                pixmap.load(".\\src\\loading\\028.jpg");
+            else if (countdown == 29)
+                pixmap.load(".\\src\\loading\\029.jpg");
+            else if (countdown == 30)
+                pixmap.load(".\\src\\loading\\030.jpg");
+            else if (countdown == 31)
+                pixmap.load(".\\src\\loading\\031.jpg");
+            else if (countdown == 32)
+                pixmap.load(".\\src\\loading\\032.jpg");
+            else if (countdown == 33)
+                pixmap.load(".\\src\\loading\\033.jpg");
+            else if (countdown == 34)
+                pixmap.load(".\\src\\loading\\034.jpg");
+            else if (countdown == 35)
+                pixmap.load(".\\src\\loading\\035.jpg");
+            else if (countdown == 36)
+                pixmap.load(".\\src\\loading\\036.jpg");
+            else if (countdown == 37)
+                pixmap.load(".\\src\\loading\\037.jpg");
+            else if (countdown == 38)
+                pixmap.load(".\\src\\loading\\038.jpg");
+            else if (countdown == 39)
+                pixmap.load(".\\src\\loading\\039.jpg");
+            else if (countdown == 40)
+                pixmap.load(".\\src\\loading\\040.jpg");
+            else if (countdown == 41)
+                pixmap.load(".\\src\\loading\\041.jpg");
+            else if (countdown == 42)
+                pixmap.load(".\\src\\loading\\042.jpg");
+            else if (countdown == 43)
+                pixmap.load(".\\src\\loading\\043.jpg");
+            else if (countdown == 44)
+                pixmap.load(".\\src\\loading\\044.jpg");
+            else if (countdown == 45)
+                pixmap.load(".\\src\\loading\\045.jpg");
+            else if (countdown == 46)
+                pixmap.load(".\\src\\loading\\046.jpg");
+            else if (countdown == 47)
+                pixmap.load(".\\src\\loading\\047.jpg");
+            else if (countdown == 48)
+                pixmap.load(".\\src\\loading\\048.jpg");
+            else if (countdown == 49)
+                pixmap.load(".\\src\\loading\\049.jpg");
+            else if (countdown == 50)
+                pixmap.load(".\\src\\loading\\050.jpg");
+        }
+        countdown++;
+
+        painter.drawPixmap(360, 176, pixmap);
+    }
+
+    // gameover window
+    else if (window == 3) {
+        killTimer(timer);
+        timer = startTimer(150);
+        pixmap.load(".\\src\\gameover\\bg.png");
+        painter.drawPixmap(0, 0, pixmap);
+        pixmap.load(".\\src\\gameover\\flat_capoo.png");
+        painter.drawPixmap(30, 0, pixmap);
+
+        QPixmap p1, p2, p3;  // extra pixmaps
+
+        // *gameover*
+        {
+            if (ending_counter % 29 == 0 || ending_counter % 29 == 1)
+                p1.load(".\\src\\gameover\\gameover\\0.png");
+            else if (ending_counter % 29 == 2 || ending_counter % 29 == 3)
+                p1.load(".\\src\\gameover\\gameover\\1.png");
+            else if (ending_counter % 29 == 4 || ending_counter % 29 == 5)
+                p1.load(".\\src\\gameover\\gameover\\2.png");
+            else if (ending_counter % 29 == 6 || ending_counter % 29 == 7)
+                p1.load(".\\src\\gameover\\gameover\\3.png");
+            else if (ending_counter % 29 == 8 || ending_counter % 29 == 9)
+                p1.load(".\\src\\gameover\\gameover\\4.png");
+            else if (ending_counter % 29 == 10 || ending_counter % 29 == 11)
+                p1.load(".\\src\\gameover\\gameover\\5.png");
+            else if (ending_counter % 29 == 12 || ending_counter % 29 == 13)
+                p1.load(".\\src\\gameover\\gameover\\6.png");
+            else if (ending_counter % 29 == 14 || ending_counter % 29 == 15)
+                p1.load(".\\src\\gameover\\gameover\\7.png");
+            else if (ending_counter % 29 == 16 || ending_counter % 29 == 17)
+                p1.load(".\\src\\gameover\\gameover\\8.png");
+            else if (ending_counter % 29 == 18 || ending_counter % 29 == 19)
+                p1.load(".\\src\\gameover\\gameover\\9.png");
+            else if (ending_counter % 29 == 20 || ending_counter % 29 == 21)
+                p1.load(".\\src\\gameover\\gameover\\10.png");
+            else if (ending_counter % 29 == 22 || ending_counter % 29 == 23)
+                p1.load(".\\src\\gameover\\gameover\\11.png");
+            else if (ending_counter % 29 == 24 || ending_counter % 29 == 25)
+                p1.load(".\\src\\gameover\\gameover\\12.png");
+            else if (ending_counter % 29 == 26 || ending_counter % 29 == 27)
+                p1.load(".\\src\\gameover\\gameover\\13.png");
+            else if (ending_counter >= 28) {
+                window = 0;
+                startClick = 0;
+            }
+        }
+        // *yes*
+        {
+            if (ending_counter % 5 == 0)
+                p2.load(".\\src\\gameover\\yes\\0.png");
+            else if (ending_counter % 5 == 1)
+                p2.load(".\\src\\gameover\\yes\\1.png");
+            else if (ending_counter % 5 == 2)
+                p2.load(".\\src\\gameover\\yes\\2.png");
+            else if (ending_counter % 5 == 3)
+                p2.load(".\\src\\gameover\\yes\\3.png");
+            else if (ending_counter % 5 == 4)
+                p2.load(".\\src\\gameover\\yes\\4.png");
+        }
+        // *no*
+        {
+            if (ending_counter % 12 == 0)
+                p3.load(".\\src\\gameover\\no\\0.png");
+            else if (ending_counter % 12 == 1)
+                p3.load(".\\src\\gameover\\no\\1.png");
+            else if (ending_counter % 12 == 2)
+                p3.load(".\\src\\gameover\\no\\2.png");
+            else if (ending_counter % 12 == 3)
+                p3.load(".\\src\\gameover\\no\\3.png");
+            else if (ending_counter % 12 == 4)
+                p3.load(".\\src\\gameover\\no\\4.png");
+            else if (ending_counter % 12 == 5)
+                p3.load(".\\src\\gameover\\no\\5.png");
+            else if (ending_counter % 12 == 6)
+                p3.load(".\\src\\gameover\\no\\6.png");
+            else if (ending_counter % 12 == 7)
+                p3.load(".\\src\\gameover\\no\\7.png");
+            else if (ending_counter % 12 == 8)
+                p3.load(".\\src\\gameover\\no\\8.png");
+            else if (ending_counter % 12 == 9)
+                p3.load(".\\src\\gameover\\no\\9.png");
+            else if (ending_counter % 12 == 10)
+                p3.load(".\\src\\gameover\\no\\10.png");
+            else if (ending_counter % 12 == 11)
+                p3.load(".\\src\\gameover\\no\\11.png");
+        }
+        painter.drawPixmap(300, 50, p1);
+        painter.drawPixmap(100, 350, p2);
+        painter.drawPixmap(885, 375, p3);
+
+        ending_counter++;
     }
 }
 
 void RunCapooRun::mouseReleaseEvent(QMouseEvent* evt) {
     repaint();
+
     //　start button pressed
     if (!window) {
         QPoint point = evt->pos();
         if ((point.x() > 450 && point.x() < 750) && (point.y() > 470 && point.y() < 550)) startClick = (!startClick);
-    } else {
+    }
+
+    // gaming operations
+    else if (window == 1) {
         if (evt->button() == Qt::LeftButton && pos > 0)
             pos--;
         else if (evt->button() == Qt::RightButton && pos < 4)
             pos++;
+    }
+
+    // gameover window
+    else if (window == 3) {
+
+        startClick = 0;      // click of the start botton
+        pos = 2;             // capoo's position (0~4), x = 225  ps.the (center, bottom) of the window is (600, 720)
+        capoo = 1;           // capoo's status
+        frequency = 100;     // initial frequency
+        countdown = 0;       // for countdown window usage
+        movingTimer = 0;     // counting time (1 time per second
+        ending_counter = 0;  //initialize counter
+
+      
+
+        QPoint point = evt->pos();
+
+        if ((point.x() > 100 && point.x() < 320) && (point.y() > 350 && point.y() < 570)) 
+            window = 2;  // yes
+        else if ((point.x() > 885 && point.x() < 1080) && (point.y() > 375 && point.y() < 595))
+            window = 0;  //no
+        
+        
     }
     repaint();
 }
@@ -211,10 +408,10 @@ void RunCapooRun::timerEvent(QTimerEvent* evt) {
     movingTimer++;  // count to 1 sec, per "movingTimer" is a "100 micro sec"
 
     // when it accumulates to 1 sec, reset the counter and push the map
-    if (movingTimer == 10) {
+    if (movingTimer == 10 && window == 1) {
         movingTimer = 0;  //reset
         create_counter++;
-        if (frequency > 0) frequency -= 1;  // let game getting faster
+        if (frequency > 30) frequency -= 0.5;  // let game getting faster
 
         //傳遞 ( row1 ~ row8 )
         row0.receive(row1.send());
@@ -233,6 +430,22 @@ void RunCapooRun::timerEvent(QTimerEvent* evt) {
             row9.create();  // 生成障礙物行
         } else
             row9.reset();  // 輸出空行
+    }
+
+    // losing game
+    if (*(&row0.send() + pos) == 0) {
+
+        row0.reset();
+        row1.reset();
+        row2.reset();
+        row3.reset();
+        row4.reset();
+        row5.reset();
+        row6.reset();
+        row7.reset();
+        row8.reset();
+        row9.reset();
+        window = 3;
     }
 }
 
