@@ -19,7 +19,9 @@ RunCapooRun::RunCapooRun(QWidget* parent)
     countdown = 1;       // for countdown window usage
     movingTimer = 0;     // counting time (1 time per second
     setObsTable();       // set obstacle coordinate table
-    ending_counter = 0;  //initialize counter
+    ending_counter = 0;  // initialize counter
+    score = -3;
+    score_capoo = 1;
 }
 
 void RunCapooRun::paintEvent(QPaintEvent*) {
@@ -51,20 +53,93 @@ void RunCapooRun::paintEvent(QPaintEvent*) {
         timer = startTimer(frequency);
 
         // background pic
-        pixmap.load(".\\src\\background\\XP_plus.png");
+        pixmap.load(".\\src\\background\\XP_with_board.png");
         painter.drawPixmap(0, 0, pixmap);
+
+        if (score >= 0) {
+            // score board
+            if (score % 10 == 0)
+                pixmap.load(".\\src\\score\\0.png");
+            else if (score % 10 == 1)
+                pixmap.load(".\\src\\score\\1.png");
+            else if (score % 10 == 2)
+                pixmap.load(".\\src\\score\\2.png");
+            else if (score % 10 == 3)
+                pixmap.load(".\\src\\score\\3.png");
+            else if (score % 10 == 4)
+                pixmap.load(".\\src\\score\\4.png");
+            else if (score % 10 == 5)
+                pixmap.load(".\\src\\score\\5.png");
+            else if (score % 10 == 6)
+                pixmap.load(".\\src\\score\\6.png");
+            else if (score % 10 == 7)
+                pixmap.load(".\\src\\score\\7.png");
+            else if (score % 10 == 8)
+                pixmap.load(".\\src\\score\\8.png");
+            else if (score % 10 == 9)
+                pixmap.load(".\\src\\score\\9.png");
+            painter.drawPixmap(1060, 60, pixmap);
+
+            if (score / 10 == 0)
+                pixmap.load(".\\src\\score\\0.png");
+            else if (score / 10 == 1)
+                pixmap.load(".\\src\\score\\1.png");
+            else if (score / 10 == 2)
+                pixmap.load(".\\src\\score\\2.png");
+            else if (score / 10 == 3)
+                pixmap.load(".\\src\\score\\3.png");
+            else if (score / 10 == 4)
+                pixmap.load(".\\src\\score\\4.png");
+            else if (score / 10 == 5)
+                pixmap.load(".\\src\\score\\5.png");
+            else if (score / 10 == 6)
+                pixmap.load(".\\src\\score\\6.png");
+            else if (score / 10 == 7)
+                pixmap.load(".\\src\\score\\7.png");
+            else if (score / 10 == 8)
+                pixmap.load(".\\src\\score\\8.png");
+            else if (score / 10 == 9)
+                pixmap.load(".\\src\\score\\9.png");
+            painter.drawPixmap(1010, 60, pixmap);
+        }
+
+        //score capoo gif
+        if (score_capoo == 1)
+            pixmap.load(".\\src\\score_capoo\\11.png");
+        else if (score_capoo == 2)
+            pixmap.load(".\\src\\score_capoo\\22.png");
+        else if (score_capoo == 3)
+            pixmap.load(".\\src\\score_capoo\\3.png");
+        else if (score_capoo == 4)
+            pixmap.load(".\\src\\score_capoo\\4.png");
+        else if (score_capoo == 5)
+            pixmap.load(".\\src\\score_capoo\\5.png");
+        else if (score_capoo == 6)
+            pixmap.load(".\\src\\score_capoo\\6.png");
+        else if (score_capoo == 7)
+            pixmap.load(".\\src\\score_capoo\\5.png");
+        else if (score_capoo == 8)
+            pixmap.load(".\\src\\score_capoo\\4.png");
+        else if (score_capoo == 9)
+            pixmap.load(".\\src\\score_capoo\\3.png");
+        else if (score_capoo == 10)
+            pixmap.load(".\\src\\score_capoo\\22.png");
+        else if (score_capoo == 11) {
+            pixmap.load(".\\src\\score_capoo\\11.png");
+            score_capoo = 0;
+        }
+        painter.drawPixmap(885, 20, pixmap);
+        score_capoo++;
 
         // layout grass
         {
             pixmap.load(".\\src\\grass\\9.png");
-            //painter.drawPixmap(obstacle_table[1][9][0], obstacle_table[1][9][1], pixmap);
             for (int i = 0; i < 5; i++) {
                 if (*(&row9.send() + i) == 0) {
                     painter.drawPixmap(obstacle_table[i][9][0], obstacle_table[i][9][1], pixmap);
                 }
             }
             pixmap.load(".\\src\\grass\\8.png");
-            //painter.drawPixmap(obstacle_table[0][8][0], obstacle_table[0][8][1], pixmap);
             for (int i = 0; i < 5; i++) {
                 if (*(&row8.send() + i) == 0) {
                     painter.drawPixmap(obstacle_table[i][8][0], obstacle_table[i][8][1], pixmap);
@@ -83,7 +158,6 @@ void RunCapooRun::paintEvent(QPaintEvent*) {
                 }
             }
             pixmap.load(".\\src\\grass\\5.png");
-            //painter.drawPixmap(obstacle_table[3][5][0], obstacle_table[3][5][1], pixmap);
             for (int i = 0; i < 5; i++) {
                 if (*(&row5.send() + i) == 0) {
                     painter.drawPixmap(obstacle_table[i][5][0], obstacle_table[i][5][1], pixmap);
@@ -113,12 +187,6 @@ void RunCapooRun::paintEvent(QPaintEvent*) {
                     painter.drawPixmap(obstacle_table[i][1][0], obstacle_table[i][1][1], pixmap);
                 }
             }
-            pixmap.load(".\\src\\grass\\0.png");
-            for (int i = 0; i < 5; i++) {
-                if (*(&row0.send() + i) == 0) {
-                    painter.drawPixmap(obstacle_table[i][0][0], obstacle_table[i][0][1], pixmap);
-                }
-            }
         }
         // capoo gif
         {
@@ -138,6 +206,14 @@ void RunCapooRun::paintEvent(QPaintEvent*) {
         capoo++;
         if (capoo > 6) capoo = 1;
         painter.drawPixmap(250 * pos - 50, 425, pixmap);  // 400 320 -> 450 370
+
+        // 讓咖波顯示在第0排障礙物後面
+        pixmap.load(".\\src\\grass\\0.png");
+        for (int i = 0; i < 5; i++) {
+            if (*(&row0.send() + i) == 0) {
+                painter.drawPixmap(obstacle_table[i][0][0], obstacle_table[i][0][1], pixmap);
+            }
+        }
     }
 
     // loading window
@@ -379,25 +455,21 @@ void RunCapooRun::mouseReleaseEvent(QMouseEvent* evt) {
 
     // gameover window
     else if (window == 3) {
-
         startClick = 0;      // click of the start botton
         pos = 2;             // capoo's position (0~4), x = 225  ps.the (center, bottom) of the window is (600, 720)
         capoo = 1;           // capoo's status
         frequency = 100;     // initial frequency
         countdown = 0;       // for countdown window usage
         movingTimer = 0;     // counting time (1 time per second
-        ending_counter = 0;  //initialize counter
-
-      
+        ending_counter = 0;  // initialize counter
+        score = -3;           // initialize score
 
         QPoint point = evt->pos();
 
-        if ((point.x() > 100 && point.x() < 320) && (point.y() > 350 && point.y() < 570)) 
+        if ((point.x() > 100 && point.x() < 320) && (point.y() > 350 && point.y() < 570))
             window = 2;  // yes
         else if ((point.x() > 885 && point.x() < 1080) && (point.y() > 375 && point.y() < 595))
             window = 0;  //no
-        
-        
     }
     repaint();
 }
@@ -428,13 +500,13 @@ void RunCapooRun::timerEvent(QTimerEvent* evt) {
         if (create_counter == 0) {
             row9.reset();   // 刷新成空行
             row9.create();  // 生成障礙物行
+            score++;        //　計分
         } else
             row9.reset();  // 輸出空行
     }
 
     // losing game
     if (*(&row0.send() + pos) == 0) {
-
         row0.reset();
         row1.reset();
         row2.reset();
@@ -451,10 +523,19 @@ void RunCapooRun::timerEvent(QTimerEvent* evt) {
 
 void RunCapooRun::setObsTable() {
     // key ( x, y in pixel) into (x, y in coordinate plane)
+    //0
+    obstacle_table[0][0][0] = -100;  // 0
+    obstacle_table[0][0][1] = 480;
+    obstacle_table[1][0][0] = 155;  // 1
+    obstacle_table[1][0][1] = 490;
+    obstacle_table[2][0][0] = 510;  // 2
+    obstacle_table[2][0][1] = 490;
+    obstacle_table[3][0][0] = 825;  // 3
+    obstacle_table[3][0][1] = 490;
+    obstacle_table[4][0][0] = 1130;  // 4
+    obstacle_table[4][0][1] = 485;
     //1
-    for (int i = 0; i < 5; i++) {
-        obstacle_table[i][1][1] = 465;
-    }
+    for (int i = 0; i < 5; i++) obstacle_table[i][1][1] = 465;
     obstacle_table[0][1][0] = -30;
     obstacle_table[1][1][0] = 205;
     obstacle_table[2][1][0] = 505;
