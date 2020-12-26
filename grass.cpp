@@ -13,11 +13,13 @@ grass::grass() {
 }
 
 void grass::create() {
-    srand(time(NULL));
-    grass_num = 4;  // TODO: 之後要改成隨機取2~4
+    
+    
+    grass_num = rand() % 2 + 3;  // TODO: 之後要改成隨機取2~4
     while (grass_num) {
-        // TODO: 尚未完成 (現在只能一條路
-        road[rand() % 5] = 0;
+        grass_position = rand() % 5;
+        if (road[grass_position] == 1) road[grass_position] = 0;
+        else continue;
         grass_num--;
     }
 }
@@ -35,3 +37,6 @@ void grass::receive(int& row) {
 void grass::reset() {
     for (int i = 0; i < 5; i++) road[i] = 1;
 }
+
+
+
