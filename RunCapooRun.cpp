@@ -6,6 +6,7 @@
 #include <QSize>
 #include <QTimer>
 #include <Qpoint>
+#include <QtMultimedia/QSound>
 
 RunCapooRun::RunCapooRun(QWidget* parent)
     : QMainWindow(parent) {
@@ -22,6 +23,9 @@ RunCapooRun::RunCapooRun(QWidget* parent)
     ending_counter = 0;  // initialize counter
     score = -3;
     score_capoo = 1;
+    sound = false;
+    playing_bgm = new QSound(".\\src\\sounds\\Trap Adventures 2 - Water Levels Music.wav", this);
+    playing_bgm->setLoops(-1);  // 循環次數 -1代表無限循環
 }
 
 void RunCapooRun::paintEvent(QPaintEvent*) {
@@ -55,6 +59,12 @@ void RunCapooRun::paintEvent(QPaintEvent*) {
         // background pic
         pixmap.load(".\\src\\background\\XP_with_board.png");
         painter.drawPixmap(0, 0, pixmap);
+
+        // background music
+        if (!sound) {
+            playing_bgm->play();
+            sound = true;
+        }
 
         if (score >= 0) {
             // score board
@@ -344,6 +354,12 @@ void RunCapooRun::paintEvent(QPaintEvent*) {
 
     // gameover window
     else if (window == 3) {
+        // stop playing_bgm
+        if (sound) {
+            playing_bgm->stop();
+            sound = false;
+        }
+
         killTimer(timer);
         timer = startTimer(150);
         pixmap.load(".\\src\\gameover\\bg.png");
@@ -462,7 +478,7 @@ void RunCapooRun::mouseReleaseEvent(QMouseEvent* evt) {
         countdown = 0;       // for countdown window usage
         movingTimer = 0;     // counting time (1 time per second
         ending_counter = 0;  // initialize counter
-        score = -3;           // initialize score
+        score = -3;          // initialize score
 
         QPoint point = evt->pos();
 
