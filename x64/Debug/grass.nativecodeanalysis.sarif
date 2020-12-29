@@ -1,0 +1,73 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "變數 'grass::grass_position' 未初始化。永遠將成員變數初始化 (type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Benson/Documents/Run_CAPOO_Run/grass.cpp"
+                },
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 8,
+                  "endLine": 9,
+                  "endColumn": 8
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0grass@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "grass::grass_position"
+          }
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.28.29335.0"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\HostX86\\x64\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x0015B1D0 -il C:\\Users\\Benson\\AppData\\Local\\Temp\\_CL_a887cc82ast -typedil -f grass.cpp -Ze -D_MSC_EXTENSIONS -Zp16 -pc \\:/ -D_MSC_VER=1928 -D_MSC_FULL_VER=192829335 -D_MSC_BUILD=0 -D_M_AMD64=100 -ZILP448 -D_M_X64=100 -D_WIN64 -D_WIN32 -GR -D_CPPRTTI -I C:\\Users\\Benson\\Documents\\Run_CAPOO_Run\\x64\\Debug\\uic -I C:\\Users\\Benson\\Documents\\Run_CAPOO_Run\\x64\\Debug\\moc -I C:\\Qt\\5.15.2\\msvc2019_64\\include -I C:\\Qt\\5.15.2\\msvc2019_64\\include\\QtMultimedia -I C:\\Qt\\5.15.2\\msvc2019_64\\include\\QtWidgets -I C:\\Qt\\5.15.2\\msvc2019_64\\include\\QtGui -I C:\\Qt\\5.15.2\\msvc2019_64\\include\\QtANGLE -I C:\\Qt\\5.15.2\\msvc2019_64\\include\\QtNetwork -I C:\\Qt\\5.15.2\\msvc2019_64\\include\\QtCore -I C:\\include -I C:\\Qt\\5.15.2\\msvc2019_64\\mkspecs\\win32-msvc -I C:\\Users\\Benson\\Documents\\Run_CAPOO_Run\\x64\\Debug\\moc -I C:\\Users\\Benson\\Documents\\Run_CAPOO_Run\\x64\\Debug\\uic -nologo -W 1 -diagnostics:column -Ot -DCODE_ANALYSIS -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -EHs -D_CPPUNWIND -EHc -MDd -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -Zc:wchar_t -Zc:forScope -Fox64\\Debug\\grass.obj -Fdx64\\Debug\\vc142.pdb -Gd -analyze:projectdirectory C:\\Users\\Benson\\Documents\\Run_CAPOO_Run -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\ucrt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\UnitTest\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\cppwinrt -I C:\\Users\\Benson\\Documents\\Run_CAPOO_Run\\Include\\um -MPdiagMutex 00000000000000C4",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/Benson/Documents/Run_CAPOO_Run/grass.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/benson/documents/run_capoo_run/grass.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        }
+      ]
+    }
+  ]
+}

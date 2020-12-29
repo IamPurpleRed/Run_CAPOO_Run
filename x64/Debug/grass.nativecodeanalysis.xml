@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Benson\Documents\Run_CAPOO_Run\</FILEPATH>
+      <FILENAME>grass.cpp</FILENAME>
+      <LINE>9</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>變數 'grass::grass_position' 未初始化。永遠將成員變數初始化 (type.6)。</DESCRIPTION>
+    <FUNCTION>grass::{ctor}</FUNCTION>
+    <DECORATED>??0grass@@QEAA@XZ</DECORATED>
+    <FUNCLINE>9</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>grass::grass_position</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

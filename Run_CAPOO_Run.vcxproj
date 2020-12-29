@@ -53,8 +53,9 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
     <QtInstall>msvc2019</QtInstall>
-    <QtModules>core;gui;widgets</QtModules>
+    <QtModules>core;gui;multimedia;widgets</QtModules>
     <QtBuildConfig>release</QtBuildConfig>
+    <QtDeploy>true</QtDeploy>
   </PropertyGroup>
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
     <Import Project="$(QtMsBuild)\qt.props" />
@@ -95,6 +96,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="grass.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Run_CAPOO_Run.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icons\128x128.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

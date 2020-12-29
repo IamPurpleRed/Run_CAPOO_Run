@@ -1,5 +1,4 @@
 #include "RunCapooRun.h"
-#include <QLabel>
 #include <QMouseEvent>
 #include <QPainter>
 #include <QPixmap>

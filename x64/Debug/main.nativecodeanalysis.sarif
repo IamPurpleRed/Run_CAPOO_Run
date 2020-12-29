@@ -1,0 +1,5896 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算術溢位: 對 4 位元組值使用運算子 '+'，然後將結果轉換為 8 位元組值。將值轉換為較廣的類型後，再呼叫運算子 '+' 以免發生溢位 (io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qglobal.h"
+                },
+                "region": {
+                  "startLine": 660,
+                  "startColumn": 29,
+                  "endLine": 660,
+                  "endColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qRound64@@YA_JM@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算術溢位: 對 4 位元組值使用運算子 '+'，然後將結果轉換為 8 位元組值。將值轉換為較廣的類型後，再呼叫運算子 '+' 以免發生溢位 (io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qglobal.h"
+                },
+                "region": {
+                  "startLine": 660,
+                  "startColumn": 48,
+                  "endLine": 660,
+                  "endColumn": 73
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qRound64@@YA_JM@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算術溢位: 對 4 位元組值使用運算子 '-'，然後將結果轉換為 8 位元組值。將值轉換為較廣的類型後，再呼叫運算子 '-' 以免發生溢位 (io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qglobal.h"
+                },
+                "region": {
+                  "startLine": 660,
+                  "startColumn": 48,
+                  "endLine": 660,
+                  "endColumn": 66
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qRound64@@YA_JM@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算術溢位: 對 4 位元組值使用運算子 '-'，然後將結果轉換為 8 位元組值。將值轉換為較廣的類型後，再呼叫運算子 '-' 以免發生溢位 (io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qglobal.h"
+                },
+                "region": {
+                  "startLine": 660,
+                  "startColumn": 88,
+                  "endLine": 660,
+                  "endColumn": 89
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qRound64@@YA_JM@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QSysInfo::MacVersion' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qsysinfo.h"
+                },
+                "region": {
+                  "startLine": 226,
+                  "startColumn": 114,
+                  "endLine": 226,
+                  "endColumn": 114
+                }
+              }
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QChar::SpecialCharacter' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qchar.h"
+                },
+                "region": {
+                  "startLine": 101,
+                  "startColumn": 5,
+                  "endLine": 101,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0QChar@@QEAA@W4SpecialCharacter@0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QChar::Category' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qchar.h"
+                },
+                "region": {
+                  "startLine": 451,
+                  "startColumn": 49,
+                  "endLine": 451,
+                  "endColumn": 72
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?category@QChar@@QEBA?AW4Category@1@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QChar::Direction' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qchar.h"
+                },
+                "region": {
+                  "startLine": 452,
+                  "startColumn": 51,
+                  "endLine": 452,
+                  "endColumn": 75
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?direction@QChar@@QEBA?AW4Direction@1@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QChar::JoiningType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qchar.h"
+                },
+                "region": {
+                  "startLine": 453,
+                  "startColumn": 55,
+                  "endLine": 453,
+                  "endColumn": 81
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?joiningType@QChar@@QEBA?AW4JoiningType@1@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QChar::Joining' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qchar.h"
+                },
+                "region": {
+                  "startLine": 460,
+                  "startColumn": 36,
+                  "endLine": 460,
+                  "endColumn": 50
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?joining@QChar@@QEBA?AW4Joining@1@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QChar::Decomposition' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qchar.h"
+                },
+                "region": {
+                  "startLine": 474,
+                  "startColumn": 62,
+                  "endLine": 474,
+                  "endColumn": 93
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?decompositionTag@QChar@@QEBA?AW4Decomposition@1@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QChar::Script' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qchar.h"
+                },
+                "region": {
+                  "startLine": 482,
+                  "startColumn": 45,
+                  "endLine": 482,
+                  "endColumn": 66
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?script@QChar@@QEBA?AW4Script@1@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QChar::UnicodeVersion' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qchar.h"
+                },
+                "region": {
+                  "startLine": 484,
+                  "startColumn": 61,
+                  "endLine": 484,
+                  "endColumn": 90
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?unicodeVersion@QChar@@QEBA?AW4UnicodeVersion@1@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::KeyboardModifier' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 110,
+                  "startColumn": 5,
+                  "endLine": 110,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??UQt@@YA?AV?$QFlags@W4KeyboardModifier@Qt@@@@W4KeyboardModifier@0@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::MouseButton' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 169,
+                  "startColumn": 5,
+                  "endLine": 169,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??UQt@@YA?AV?$QFlags@W4MouseButton@Qt@@@@W4MouseButton@0@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::Orientation' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 177,
+                  "startColumn": 5,
+                  "endLine": 177,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??UQt@@YA?AV?$QFlags@W4Orientation@Qt@@@@W4Orientation@0@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::SplitBehaviorFlags' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 204,
+                  "startColumn": 5,
+                  "endLine": 204,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??UQt@@YA?AV?$QFlags@W4SplitBehaviorFlags@Qt@@@@W4SplitBehaviorFlags@0@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::AlignmentFlag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 240,
+                  "startColumn": 5,
+                  "endLine": 240,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??UQt@@YA?AV?$QFlags@W4AlignmentFlag@Qt@@@@W4AlignmentFlag@0@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::WindowType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 324,
+                  "startColumn": 5,
+                  "endLine": 324,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??UQt@@YA?AV?$QFlags@W4WindowType@Qt@@@@W4WindowType@0@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::WindowState' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 335,
+                  "startColumn": 5,
+                  "endLine": 335,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??UQt@@YA?AV?$QFlags@W4WindowState@Qt@@@@W4WindowState@0@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::ScreenOrientation' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 355,
+                  "startColumn": 5,
+                  "endLine": 355,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??UQt@@YA?AV?$QFlags@W4ScreenOrientation@Qt@@@@W4ScreenOrientation@0@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::ImageConversionFlag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 596,
+                  "startColumn": 5,
+                  "endLine": 596,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??UQt@@YA?AV?$QFlags@W4ImageConversionFlag@Qt@@@@W4ImageConversionFlag@0@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::DockWidgetArea' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1255,
+                  "startColumn": 5,
+                  "endLine": 1255,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??UQt@@YA?AV?$QFlags@W4DockWidgetArea@Qt@@@@W4DockWidgetArea@0@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::ToolBarArea' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1273,
+                  "startColumn": 5,
+                  "endLine": 1273,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??UQt@@YA?AV?$QFlags@W4ToolBarArea@Qt@@@@W4ToolBarArea@0@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::Edge' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1334,
+                  "startColumn": 5,
+                  "endLine": 1334,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??UQt@@YA?AV?$QFlags@W4Edge@Qt@@@@W4Edge@0@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::InputMethodQuery' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1439,
+                  "startColumn": 5,
+                  "endLine": 1439,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??UQt@@YA?AV?$QFlags@W4InputMethodQuery@Qt@@@@W4InputMethodQuery@0@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::InputMethodHint' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1474,
+                  "startColumn": 5,
+                  "endLine": 1474,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??UQt@@YA?AV?$QFlags@W4InputMethodHint@Qt@@@@W4InputMethodHint@0@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::DropAction' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1525,
+                  "startColumn": 5,
+                  "endLine": 1525,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??UQt@@YA?AV?$QFlags@W4DropAction@Qt@@@@W4DropAction@0@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::ItemFlag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1582,
+                  "startColumn": 5,
+                  "endLine": 1582,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??UQt@@YA?AV?$QFlags@W4ItemFlag@Qt@@@@W4ItemFlag@0@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::MatchFlag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1600,
+                  "startColumn": 5,
+                  "endLine": 1600,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??UQt@@YA?AV?$QFlags@W4MatchFlag@Qt@@@@W4MatchFlag@0@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::TextInteractionFlag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1625,
+                  "startColumn": 5,
+                  "endLine": 1625,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??UQt@@YA?AV?$QFlags@W4TextInteractionFlag@Qt@@@@W4TextInteractionFlag@0@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::TouchPointState' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1677,
+                  "startColumn": 5,
+                  "endLine": 1677,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??UQt@@YA?AV?$QFlags@W4TouchPointState@Qt@@@@W4TouchPointState@0@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::GestureFlag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1709,
+                  "startColumn": 5,
+                  "endLine": 1709,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??UQt@@YA?AV?$QFlags@W4GestureFlag@Qt@@@@W4GestureFlag@0@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::MouseEventFlag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1764,
+                  "startColumn": 5,
+                  "endLine": 1764,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??UQt@@YA?AV?$QFlags@W4MouseEventFlag@Qt@@@@W4MouseEventFlag@0@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::ScrollBarPolicy' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1785,
+                  "startColumn": 5,
+                  "endLine": 1785,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4ScrollBarPolicy@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::FocusPolicy' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1786,
+                  "startColumn": 5,
+                  "endLine": 1786,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4FocusPolicy@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::ContextMenuPolicy' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1787,
+                  "startColumn": 5,
+                  "endLine": 1787,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4ContextMenuPolicy@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::ArrowType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1788,
+                  "startColumn": 5,
+                  "endLine": 1788,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4ArrowType@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::ToolButtonStyle' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1789,
+                  "startColumn": 5,
+                  "endLine": 1789,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4ToolButtonStyle@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::PenStyle' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1790,
+                  "startColumn": 5,
+                  "endLine": 1790,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4PenStyle@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::PenCapStyle' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1791,
+                  "startColumn": 5,
+                  "endLine": 1791,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4PenCapStyle@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::PenJoinStyle' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1792,
+                  "startColumn": 5,
+                  "endLine": 1792,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4PenJoinStyle@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::BrushStyle' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1793,
+                  "startColumn": 5,
+                  "endLine": 1793,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4BrushStyle@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::FillRule' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1794,
+                  "startColumn": 5,
+                  "endLine": 1794,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4FillRule@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::MaskMode' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1795,
+                  "startColumn": 5,
+                  "endLine": 1795,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4MaskMode@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::BGMode' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1796,
+                  "startColumn": 5,
+                  "endLine": 1796,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4BGMode@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::ClipOperation' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1797,
+                  "startColumn": 5,
+                  "endLine": 1797,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4ClipOperation@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::SizeMode' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1798,
+                  "startColumn": 5,
+                  "endLine": 1798,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4SizeMode@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::Axis' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1799,
+                  "startColumn": 5,
+                  "endLine": 1799,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4Axis@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::Corner' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1800,
+                  "startColumn": 5,
+                  "endLine": 1800,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4Corner@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::LayoutDirection' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1802,
+                  "startColumn": 5,
+                  "endLine": 1802,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4LayoutDirection@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::SizeHint' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1803,
+                  "startColumn": 5,
+                  "endLine": 1803,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4SizeHint@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::TextFlag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1807,
+                  "startColumn": 5,
+                  "endLine": 1807,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4TextFlag@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::TextFormat' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1816,
+                  "startColumn": 5,
+                  "endLine": 1816,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4TextFormat@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::TextElideMode' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1817,
+                  "startColumn": 5,
+                  "endLine": 1817,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4TextElideMode@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::DateFormat' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1818,
+                  "startColumn": 5,
+                  "endLine": 1818,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4DateFormat@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::TimeSpec' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1819,
+                  "startColumn": 5,
+                  "endLine": 1819,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4TimeSpec@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::DayOfWeek' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1820,
+                  "startColumn": 5,
+                  "endLine": 1820,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4DayOfWeek@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::CursorShape' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1821,
+                  "startColumn": 5,
+                  "endLine": 1821,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4CursorShape@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::GlobalColor' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1822,
+                  "startColumn": 5,
+                  "endLine": 1822,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4GlobalColor@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::AspectRatioMode' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1823,
+                  "startColumn": 5,
+                  "endLine": 1823,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4AspectRatioMode@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::TransformationMode' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1824,
+                  "startColumn": 5,
+                  "endLine": 1824,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4TransformationMode@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::Key' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1826,
+                  "startColumn": 5,
+                  "endLine": 1826,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4Key@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::ShortcutContext' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1827,
+                  "startColumn": 5,
+                  "endLine": 1827,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4ShortcutContext@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::ItemSelectionMode' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1830,
+                  "startColumn": 5,
+                  "endLine": 1830,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4ItemSelectionMode@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::ItemSelectionOperation' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1831,
+                  "startColumn": 5,
+                  "endLine": 1831,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4ItemSelectionOperation@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::CheckState' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1833,
+                  "startColumn": 5,
+                  "endLine": 1833,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4CheckState@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::ItemDataRole' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1834,
+                  "startColumn": 5,
+                  "endLine": 1834,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4ItemDataRole@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::SortOrder' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1835,
+                  "startColumn": 5,
+                  "endLine": 1835,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4SortOrder@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::CaseSensitivity' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1836,
+                  "startColumn": 5,
+                  "endLine": 1836,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4CaseSensitivity@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::WindowModality' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1842,
+                  "startColumn": 5,
+                  "endLine": 1842,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4WindowModality@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::WidgetAttribute' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1843,
+                  "startColumn": 5,
+                  "endLine": 1843,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4WidgetAttribute@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::ApplicationAttribute' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1844,
+                  "startColumn": 5,
+                  "endLine": 1844,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4ApplicationAttribute@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::FocusReason' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1847,
+                  "startColumn": 5,
+                  "endLine": 1847,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4FocusReason@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::EnterKeyType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1851,
+                  "startColumn": 5,
+                  "endLine": 1851,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4EnterKeyType@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::ConnectionType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1856,
+                  "startColumn": 5,
+                  "endLine": 1856,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4ConnectionType@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::ApplicationState' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1857,
+                  "startColumn": 5,
+                  "endLine": 1857,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4ApplicationState@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::GestureState' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1859,
+                  "startColumn": 5,
+                  "endLine": 1859,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4GestureState@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::GestureType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1860,
+                  "startColumn": 5,
+                  "endLine": 1860,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4GestureType@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::NativeGestureType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1861,
+                  "startColumn": 5,
+                  "endLine": 1861,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4NativeGestureType@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::CursorMoveStyle' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1863,
+                  "startColumn": 5,
+                  "endLine": 1863,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4CursorMoveStyle@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::TimerType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1864,
+                  "startColumn": 5,
+                  "endLine": 1864,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4TimerType@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::ScrollPhase' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1865,
+                  "startColumn": 5,
+                  "endLine": 1865,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4ScrollPhase@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::MouseEventSource' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1866,
+                  "startColumn": 5,
+                  "endLine": 1866,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4MouseEventSource@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::ChecksumType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1868,
+                  "startColumn": 5,
+                  "endLine": 1868,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4ChecksumType@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'Qt::TabFocusBehavior' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+                },
+                "region": {
+                  "startLine": 1870,
+                  "startColumn": 5,
+                  "endLine": 1870,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@Qt@@YAPEBUQMetaObject@@W4TabFocusBehavior@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QArrayData::AllocationOption' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qarraydata.h"
+                },
+                "region": {
+                  "startLine": 126,
+                  "startColumn": 1,
+                  "endLine": 126,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??U@YA?AV?$QFlags@W4AllocationOption@QArrayData@@@@W4AllocationOption@QArrayData@@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QByteArray::Base64Option' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qbytearray.h"
+                },
+                "region": {
+                  "startLine": 492,
+                  "startColumn": 1,
+                  "endLine": 492,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??U@YA?AV?$QFlags@W4Base64Option@QByteArray@@@@W4Base64Option@QByteArray@@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QString::SectionFlag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qstring.h"
+                },
+                "region": {
+                  "startLine": 1595,
+                  "startColumn": 1,
+                  "endLine": 1595,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??U@YA?AV?$QFlags@W4SectionFlag@QString@@@@W4SectionFlag@QString@@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QtPrivate::ArgBase::Tag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qstring.h"
+                },
+                "region": {
+                  "startLine": 2095,
+                  "startColumn": 80,
+                  "endLine": 2095,
+                  "endColumn": 80
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0QStringViewArg@QtPrivate@@QEAA@VQStringView@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QMetaType::ExtensionFlag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qmetatype.h"
+                },
+                "region": {
+                  "startLine": 734,
+                  "startColumn": 17,
+                  "endLine": 734,
+                  "endColumn": 17
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?isExtended@QMetaType@@AEBA_NW4ExtensionFlag@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QMetaType::TypeFlag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qmetatype.h"
+                },
+                "region": {
+                  "startLine": 786,
+                  "startColumn": 1,
+                  "endLine": 786,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??U@YA?AV?$QFlags@W4TypeFlag@QMetaType@@@@W4TypeFlag@QMetaType@@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QtMetaTypePrivate::IteratorCapability' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qmetatype.h"
+                },
+                "region": {
+                  "startLine": 1101,
+                  "startColumn": 48,
+                  "endLine": 1101,
+                  "endColumn": 111
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?iteratorCapabilities@QSequentialIterableImpl@QtMetaTypePrivate@@QEAA?AW4IteratorCapability@2@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QEvent::Type' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qcoreevent.h"
+                },
+                "region": {
+                  "startLine": 295,
+                  "startColumn": 5,
+                  "endLine": 295,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@@YAPEBUQMetaObject@@W4Type@QEvent@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QEventLoop::ProcessEventsFlag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qeventloop.h"
+                },
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 1,
+                  "endLine": 85,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??U@YA?AV?$QFlags@W4ProcessEventsFlag@QEventLoop@@@@W4ProcessEventsFlag@QEventLoop@@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QInputMethod::Action' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qinputmethod.h"
+                },
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 5,
+                  "endLine": 87,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@@YAPEBUQMetaObject@@W4Action@QInputMethod@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QMapNodeBase::Color' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qmap.h"
+                },
+                "region": {
+                  "startLine": 93,
+                  "startColumn": 27,
+                  "endLine": 93,
+                  "endColumn": 44
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?color@QMapNodeBase@@QEBA?AW4Color@1@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QLocale::Language' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qlocale.h"
+                },
+                "region": {
+                  "startLine": 949,
+                  "startColumn": 5,
+                  "endLine": 949,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@@YAPEBUQMetaObject@@W4Language@QLocale@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QLocale::Country' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qlocale.h"
+                },
+                "region": {
+                  "startLine": 950,
+                  "startColumn": 5,
+                  "endLine": 950,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@@YAPEBUQMetaObject@@W4Country@QLocale@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QLocale::Script' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qlocale.h"
+                },
+                "region": {
+                  "startLine": 951,
+                  "startColumn": 5,
+                  "endLine": 951,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@@YAPEBUQMetaObject@@W4Script@QLocale@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QLocale::MeasurementSystem' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qlocale.h"
+                },
+                "region": {
+                  "startLine": 959,
+                  "startColumn": 5,
+                  "endLine": 959,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@@YAPEBUQMetaObject@@W4MeasurementSystem@QLocale@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QLocale::NumberOption' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qlocale.h"
+                },
+                "region": {
+                  "startLine": 1194,
+                  "startColumn": 1,
+                  "endLine": 1194,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??U@YA?AV?$QFlags@W4NumberOption@QLocale@@@@W4NumberOption@QLocale@@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QColor::Spec' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qcolor.h"
+                },
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 16,
+                  "endLine": 71,
+                  "endColumn": 17
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0QColor@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "變數 'QColor::CT::argbExtended' 未初始化。永遠將成員變數初始化 (type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qcolor.h"
+                },
+                "region": {
+                  "startLine": 265,
+                  "startColumn": 9,
+                  "endLine": 265,
+                  "endColumn": 9
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0CT@QColor@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "QColor::CT::argbExtended"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "變數 'QColor::CT::acmyk' 未初始化。永遠將成員變數初始化 (type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qcolor.h"
+                },
+                "region": {
+                  "startLine": 265,
+                  "startColumn": 9,
+                  "endLine": 265,
+                  "endColumn": 9
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0CT@QColor@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "QColor::CT::acmyk"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "變數 'QColor::CT::argb' 未初始化。永遠將成員變數初始化 (type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qcolor.h"
+                },
+                "region": {
+                  "startLine": 265,
+                  "startColumn": 9,
+                  "endLine": 265,
+                  "endColumn": 9
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0CT@QColor@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "QColor::CT::argb"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "變數 'QColor::CT::ahsl' 未初始化。永遠將成員變數初始化 (type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qcolor.h"
+                },
+                "region": {
+                  "startLine": 265,
+                  "startColumn": 9,
+                  "endLine": 265,
+                  "endColumn": 9
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0CT@QColor@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "QColor::CT::ahsl"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "變數 'QColor::CT::array' 未初始化。永遠將成員變數初始化 (type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qcolor.h"
+                },
+                "region": {
+                  "startLine": 265,
+                  "startColumn": 9,
+                  "endLine": 265,
+                  "endColumn": 9
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0CT@QColor@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "QColor::CT::array"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "變數 'QColor::CT::ahsv' 未初始化。永遠將成員變數初始化 (type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qcolor.h"
+                },
+                "region": {
+                  "startLine": 265,
+                  "startColumn": 9,
+                  "endLine": 265,
+                  "endColumn": 9
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0CT@QColor@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "QColor::CT::ahsv"
+          }
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QIODevice::OpenModeFlag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qiodevice.h"
+                },
+                "region": {
+                  "startLine": 185,
+                  "startColumn": 1,
+                  "endLine": 185,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??U@YA?AV?$QFlags@W4OpenModeFlag@QIODevice@@@@W4OpenModeFlag@QIODevice@@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QDataStream::Status' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qdatastream.h"
+                },
+                "region": {
+                  "startLine": 227,
+                  "startColumn": 67,
+                  "endLine": 227,
+                  "endColumn": 77
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0StreamStateSaver@QtPrivate@@QEAA@PEAVQDataStream@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QDataStream::ByteOrder' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qdatastream.h"
+                },
+                "region": {
+                  "startLine": 372,
+                  "startColumn": 3,
+                  "endLine": 372,
+                  "endColumn": 10
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?byteOrder@QDataStream@@QEBA?AW4ByteOrder@1@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "變數 'QMatrix::_dy' 未初始化。永遠將成員變數初始化 (type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qmatrix.h"
+                },
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 5,
+                  "endLine": 60,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0QMatrix@@QEAA@W4Initialization@Qt@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "QMatrix::_dy"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "變數 'QMatrix::_dx' 未初始化。永遠將成員變數初始化 (type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qmatrix.h"
+                },
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 5,
+                  "endLine": 60,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0QMatrix@@QEAA@W4Initialization@Qt@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "QMatrix::_dx"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "變數 'QMatrix::_m22' 未初始化。永遠將成員變數初始化 (type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qmatrix.h"
+                },
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 5,
+                  "endLine": 60,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0QMatrix@@QEAA@W4Initialization@Qt@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "QMatrix::_m22"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "變數 'QMatrix::_m12' 未初始化。永遠將成員變數初始化 (type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qmatrix.h"
+                },
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 5,
+                  "endLine": 60,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0QMatrix@@QEAA@W4Initialization@Qt@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "QMatrix::_m12"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "變數 'QMatrix::_m21' 未初始化。永遠將成員變數初始化 (type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qmatrix.h"
+                },
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 5,
+                  "endLine": 60,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0QMatrix@@QEAA@W4Initialization@Qt@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "QMatrix::_m21"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "變數 'QMatrix::_m11' 未初始化。永遠將成員變數初始化 (type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qmatrix.h"
+                },
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 5,
+                  "endLine": 60,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0QMatrix@@QEAA@W4Initialization@Qt@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "QMatrix::_m11"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "變數 'QMatrix::_dy' 未初始化。永遠將成員變數初始化 (type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qmatrix.h"
+                },
+                "region": {
+                  "startLine": 70,
+                  "startColumn": 5,
+                  "endLine": 70,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0QMatrix@@QEAA@$$QEAV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "QMatrix::_dy"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "變數 'QMatrix::_dx' 未初始化。永遠將成員變數初始化 (type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qmatrix.h"
+                },
+                "region": {
+                  "startLine": 70,
+                  "startColumn": 5,
+                  "endLine": 70,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0QMatrix@@QEAA@$$QEAV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "QMatrix::_dx"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "變數 'QMatrix::_m22' 未初始化。永遠將成員變數初始化 (type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qmatrix.h"
+                },
+                "region": {
+                  "startLine": 70,
+                  "startColumn": 5,
+                  "endLine": 70,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0QMatrix@@QEAA@$$QEAV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "QMatrix::_m22"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "變數 'QMatrix::_m12' 未初始化。永遠將成員變數初始化 (type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qmatrix.h"
+                },
+                "region": {
+                  "startLine": 70,
+                  "startColumn": 5,
+                  "endLine": 70,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0QMatrix@@QEAA@$$QEAV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "QMatrix::_m12"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "變數 'QMatrix::_m21' 未初始化。永遠將成員變數初始化 (type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qmatrix.h"
+                },
+                "region": {
+                  "startLine": 70,
+                  "startColumn": 5,
+                  "endLine": 70,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0QMatrix@@QEAA@$$QEAV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "QMatrix::_m21"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "變數 'QMatrix::_m11' 未初始化。永遠將成員變數初始化 (type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qmatrix.h"
+                },
+                "region": {
+                  "startLine": 70,
+                  "startColumn": 5,
+                  "endLine": 70,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0QMatrix@@QEAA@$$QEAV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "QMatrix::_m11"
+          }
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QTransform::TransformationType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qtransform.h"
+                },
+                "region": {
+                  "startLine": 219,
+                  "startColumn": 5,
+                  "endLine": 219,
+                  "endColumn": 16
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?inline_type@QTransform@@AEBA?AW4TransformationType@1@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QPixelFormat::Field' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qpixelformat.h"
+                },
+                "region": {
+                  "startLine": 98,
+                  "startColumn": 35,
+                  "endLine": 98,
+                  "endColumn": 35
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?get@QPixelFormat@@AEBAEW4Field@1@W4FieldWidth@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QPixelFormat::FieldWidth' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qpixelformat.h"
+                },
+                "region": {
+                  "startLine": 98,
+                  "startColumn": 35,
+                  "endLine": 98,
+                  "endColumn": 35
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?get@QPixelFormat@@AEBAEW4Field@1@W4FieldWidth@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QPixelFormat::ColorModel' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qpixelformat.h"
+                },
+                "region": {
+                  "startLine": 178,
+                  "startColumn": 71,
+                  "endLine": 178,
+                  "endColumn": 105
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?colorModel@QPixelFormat@@QEBA?AW4ColorModel@1@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QPixelFormat::AlphaUsage' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qpixelformat.h"
+                },
+                "region": {
+                  "startLine": 209,
+                  "startColumn": 70,
+                  "endLine": 209,
+                  "endColumn": 109
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?alphaUsage@QPixelFormat@@QEBA?AW4AlphaUsage@1@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QPixelFormat::AlphaPosition' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qpixelformat.h"
+                },
+                "region": {
+                  "startLine": 210,
+                  "startColumn": 76,
+                  "endLine": 210,
+                  "endColumn": 121
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?alphaPosition@QPixelFormat@@QEBA?AW4AlphaPosition@1@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QPixelFormat::AlphaPremultiplied' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qpixelformat.h"
+                },
+                "region": {
+                  "startLine": 211,
+                  "startColumn": 81,
+                  "endLine": 211,
+                  "endColumn": 124
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?premultiplied@QPixelFormat@@QEBA?AW4AlphaPremultiplied@1@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QPixelFormat::TypeInterpretation' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qpixelformat.h"
+                },
+                "region": {
+                  "startLine": 212,
+                  "startColumn": 86,
+                  "endLine": 212,
+                  "endColumn": 141
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?typeInterpretation@QPixelFormat@@QEBA?AW4TypeInterpretation@1@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QPixelFormat::ByteOrder' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qpixelformat.h"
+                },
+                "region": {
+                  "startLine": 213,
+                  "startColumn": 68,
+                  "endLine": 213,
+                  "endColumn": 105
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?byteOrder@QPixelFormat@@QEBA?AW4ByteOrder@1@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QPixelFormat::YUVLayout' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qpixelformat.h"
+                },
+                "region": {
+                  "startLine": 215,
+                  "startColumn": 68,
+                  "endLine": 215,
+                  "endColumn": 103
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?yuvLayout@QPixelFormat@@QEBA?AW4YUVLayout@1@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QImage::Format' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qimage.h"
+                },
+                "region": {
+                  "startLine": 139,
+                  "startColumn": 5,
+                  "endLine": 139,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@@YAPEBUQMetaObject@@W4Format@QImage@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "變數 'QtSharedPointer::ExternalRefCountData::destroyer' 未初始化。永遠將成員變數初始化 (type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qsharedpointer_impl.h"
+                },
+                "region": {
+                  "startLine": 146,
+                  "startColumn": 9,
+                  "endLine": 146,
+                  "endColumn": 9
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0ExternalRefCountData@QtSharedPointer@@QEAA@W4Initialization@Qt@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "QtSharedPointer::ExternalRefCountData::destroyer"
+          }
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QGradient::Type' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qbrush.h"
+                },
+                "region": {
+                  "startLine": 188,
+                  "startColumn": 5,
+                  "endLine": 188,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@@YAPEBUQMetaObject@@W4Type@QGradient@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QGradient::Spread' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qbrush.h"
+                },
+                "region": {
+                  "startLine": 195,
+                  "startColumn": 5,
+                  "endLine": 195,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@@YAPEBUQMetaObject@@W4Spread@QGradient@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QGradient::CoordinateMode' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qbrush.h"
+                },
+                "region": {
+                  "startLine": 203,
+                  "startColumn": 5,
+                  "endLine": 203,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@@YAPEBUQMetaObject@@W4CoordinateMode@QGradient@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QGradient::Preset' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qbrush.h"
+                },
+                "region": {
+                  "startLine": 382,
+                  "startColumn": 5,
+                  "endLine": 382,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@@YAPEBUQMetaObject@@W4Preset@QGradient@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QPalette::ColorGroup' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qpalette.h"
+                },
+                "region": {
+                  "startLine": 89,
+                  "startColumn": 5,
+                  "endLine": 89,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@@YAPEBUQMetaObject@@W4ColorGroup@QPalette@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QPalette::ColorRole' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qpalette.h"
+                },
+                "region": {
+                  "startLine": 104,
+                  "startColumn": 5,
+                  "endLine": 104,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@@YAPEBUQMetaObject@@W4ColorRole@QPalette@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QFont::StyleHint' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qfont.h"
+                },
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 5,
+                  "endLine": 71,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@@YAPEBUQMetaObject@@W4StyleHint@QFont@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QFont::StyleStrategy' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qfont.h"
+                },
+                "region": {
+                  "startLine": 91,
+                  "startColumn": 5,
+                  "endLine": 91,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@@YAPEBUQMetaObject@@W4StyleStrategy@QFont@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QFont::HintingPreference' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qfont.h"
+                },
+                "region": {
+                  "startLine": 99,
+                  "startColumn": 5,
+                  "endLine": 99,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@@YAPEBUQMetaObject@@W4HintingPreference@QFont@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QFont::Weight' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qfont.h"
+                },
+                "region": {
+                  "startLine": 113,
+                  "startColumn": 5,
+                  "endLine": 113,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@@YAPEBUQMetaObject@@W4Weight@QFont@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QFont::Style' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qfont.h"
+                },
+                "region": {
+                  "startLine": 120,
+                  "startColumn": 5,
+                  "endLine": 120,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@@YAPEBUQMetaObject@@W4Style@QFont@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QFont::Stretch' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qfont.h"
+                },
+                "region": {
+                  "startLine": 134,
+                  "startColumn": 5,
+                  "endLine": 134,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@@YAPEBUQMetaObject@@W4Stretch@QFont@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QFont::Capitalization' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qfont.h"
+                },
+                "region": {
+                  "startLine": 143,
+                  "startColumn": 5,
+                  "endLine": 143,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@@YAPEBUQMetaObject@@W4Capitalization@QFont@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QFont::SpacingType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qfont.h"
+                },
+                "region": {
+                  "startLine": 149,
+                  "startColumn": 5,
+                  "endLine": 149,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@@YAPEBUQMetaObject@@W4SpacingType@QFont@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QFont::ResolveProperties' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qfont.h"
+                },
+                "region": {
+                  "startLine": 173,
+                  "startColumn": 5,
+                  "endLine": 173,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@@YAPEBUQMetaObject@@W4ResolveProperties@QFont@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QSizePolicy::Policy' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qsizepolicy.h"
+                },
+                "region": {
+                  "startLine": 91,
+                  "startColumn": 5,
+                  "endLine": 91,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@@YAPEBUQMetaObject@@W4Policy@QSizePolicy@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QSizePolicy::ControlType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qsizepolicy.h"
+                },
+                "region": {
+                  "startLine": 116,
+                  "startColumn": 5,
+                  "endLine": 116,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0QSizePolicy@@QEAA@W4Policy@0@0W4ControlType@0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QKeySequence::StandardKey' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qkeysequence.h"
+                },
+                "region": {
+                  "startLine": 149,
+                  "startColumn": 6,
+                  "endLine": 149,
+                  "endColumn": 6
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@@YAPEBUQMetaObject@@W4StandardKey@QKeySequence@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QWidget::RenderFlag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qwidget.h"
+                },
+                "region": {
+                  "startLine": 750,
+                  "startColumn": 1,
+                  "endLine": 750,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??U@YA?AV?$QFlags@W4RenderFlag@QWidget@@@@W4RenderFlag@QWidget@@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QIcon::Mode' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qicon.h"
+                },
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 20,
+                  "endLine": 79,
+                  "endColumn": 20
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?pixmap@QIcon@@QEBA?AVQPixmap@@HHW4Mode@1@W4State@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QIcon::State' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qicon.h"
+                },
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 20,
+                  "endLine": 79,
+                  "endColumn": 20
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?pixmap@QIcon@@QEBA?AVQPixmap@@HHW4Mode@1@W4State@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QTabWidget::TabPosition' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qtabwidget.h"
+                },
+                "region": {
+                  "startLine": 111,
+                  "startColumn": 5,
+                  "endLine": 111,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@@YAPEBUQMetaObject@@W4TabPosition@QTabWidget@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QTabWidget::TabShape' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qtabwidget.h"
+                },
+                "region": {
+                  "startLine": 122,
+                  "startColumn": 5,
+                  "endLine": 122,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@@YAPEBUQMetaObject@@W4TabShape@QTabWidget@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QMainWindow::DockOption' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qmainwindow.h"
+                },
+                "region": {
+                  "startLine": 90,
+                  "startColumn": 5,
+                  "endLine": 90,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@@YAPEBUQMetaObject@@W4DockOption@QMainWindow@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QAction::MenuRole' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qaction.h"
+                },
+                "region": {
+                  "startLine": 90,
+                  "startColumn": 5,
+                  "endLine": 90,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@@YAPEBUQMetaObject@@W4MenuRole@QAction@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QAction::Priority' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qaction.h"
+                },
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 5,
+                  "endLine": 94,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?qt_getEnumMetaObject@@YAPEBUQMetaObject@@W4Priority@QAction@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "函式 'qMetaTypeId<QPair<QVariant,QVariant> >' 是 constexpr，如果需要編譯時間評估，請將變數 'vid' 標記為 constexpr (con.5)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qvariant.h"
+                },
+                "region": {
+                  "startLine": 742,
+                  "startColumn": 23,
+                  "endLine": 742,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?metaType@?$QVariantValueHelper@U?$QPair@VQVariant@@V1@@@@QtPrivate@@SA?AU?$QPair@VQVariant@@V1@@@AEBVQVariant@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "函式 'qMetaTypeId<QMap<QString,QVariant> >' 是 constexpr，如果需要編譯時間評估，請將變數 'vid' 標記為 constexpr (con.5)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qvariant.h"
+                },
+                "region": {
+                  "startLine": 742,
+                  "startColumn": 23,
+                  "endLine": 742,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?metaType@?$QVariantValueHelper@V?$QMap@VQString@@VQVariant@@@@@QtPrivate@@SA?AV?$QMap@VQString@@VQVariant@@@@AEBVQVariant@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "函式 'qMetaTypeId<QHash<QString,QVariant> >' 是 constexpr，如果需要編譯時間評估，請將變數 'vid' 標記為 constexpr (con.5)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qvariant.h"
+                },
+                "region": {
+                  "startLine": 742,
+                  "startColumn": 23,
+                  "endLine": 742,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?metaType@?$QVariantValueHelper@V?$QHash@VQString@@VQVariant@@@@@QtPrivate@@SA?AV?$QHash@VQString@@VQVariant@@@@AEBVQVariant@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "函式 'qMetaTypeId<QList<QVariant> >' 是 constexpr，如果需要編譯時間評估，請將變數 'vid' 標記為 constexpr (con.5)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qvariant.h"
+                },
+                "region": {
+                  "startLine": 742,
+                  "startColumn": 23,
+                  "endLine": 742,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?metaType@?$QVariantValueHelper@V?$QList@VQVariant@@@@@QtPrivate@@SA?AV?$QList@VQVariant@@@@AEBVQVariant@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QtPrivate::MetaTypeDefinedHelper<QtMetaTypePrivate::QSequentialIterableImpl,1>::DefinedType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qmetatype.h"
+                },
+                "region": {
+                  "startLine": 1884,
+                  "startColumn": 1,
+                  "endLine": 1884,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$qRegisterMetaType@VQSequentialIterableImpl@QtMetaTypePrivate@@@@YAHPEBDPEAVQSequentialIterableImpl@QtMetaTypePrivate@@W4DefinedType@?$MetaTypeDefinedHelper@VQSequentialIterableImpl@QtMetaTypePrivate@@$00@QtPrivate@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QtPrivate::MetaTypeDefinedHelper<QtMetaTypePrivate::QAssociativeIterableImpl,1>::DefinedType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qmetatype.h"
+                },
+                "region": {
+                  "startLine": 1884,
+                  "startColumn": 1,
+                  "endLine": 1884,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$qRegisterMetaType@VQAssociativeIterableImpl@QtMetaTypePrivate@@@@YAHPEBDPEAVQAssociativeIterableImpl@QtMetaTypePrivate@@W4DefinedType@?$MetaTypeDefinedHelper@VQAssociativeIterableImpl@QtMetaTypePrivate@@$00@QtPrivate@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QtPrivate::MetaTypeDefinedHelper<QtMetaTypePrivate::QPairVariantInterfaceImpl,1>::DefinedType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qmetatype.h"
+                },
+                "region": {
+                  "startLine": 1884,
+                  "startColumn": 1,
+                  "endLine": 1884,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$qRegisterMetaType@VQPairVariantInterfaceImpl@QtMetaTypePrivate@@@@YAHPEBDPEAVQPairVariantInterfaceImpl@QtMetaTypePrivate@@W4DefinedType@?$MetaTypeDefinedHelper@VQPairVariantInterfaceImpl@QtMetaTypePrivate@@$00@QtPrivate@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QtPrivate::MetaTypeDefinedHelper<QPair<QVariant,QVariant>,1>::DefinedType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qmetatype.h"
+                },
+                "region": {
+                  "startLine": 1847,
+                  "startColumn": 1,
+                  "endLine": 1847,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$qRegisterNormalizedMetaType@U?$QPair@VQVariant@@V1@@@@@YAHAEBVQByteArray@@PEAU?$QPair@VQVariant@@V1@@@W4DefinedType@?$MetaTypeDefinedHelper@U?$QPair@VQVariant@@V1@@@$00@QtPrivate@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "函式 'qMetaTypeId<QtMetaTypePrivate::QAssociativeIterableImpl>' 是 constexpr，如果需要編譯時間評估，請將變數 'vid' 標記為 constexpr (con.5)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qvariant.h"
+                },
+                "region": {
+                  "startLine": 742,
+                  "startColumn": 23,
+                  "endLine": 742,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?metaType@?$QVariantValueHelper@VQAssociativeIterableImpl@QtMetaTypePrivate@@@QtPrivate@@SA?AVQAssociativeIterableImpl@QtMetaTypePrivate@@AEBVQVariant@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "函式 'qMetaTypeId<QtMetaTypePrivate::QSequentialIterableImpl>' 是 constexpr，如果需要編譯時間評估，請將變數 'vid' 標記為 constexpr (con.5)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qvariant.h"
+                },
+                "region": {
+                  "startLine": 742,
+                  "startColumn": 23,
+                  "endLine": 742,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?metaType@?$QVariantValueHelper@VQSequentialIterableImpl@QtMetaTypePrivate@@@QtPrivate@@SA?AVQSequentialIterableImpl@QtMetaTypePrivate@@AEBVQVariant@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "列舉類型 'QtMetaTypePrivate::QSequentialIterableImpl::Position' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qmetatype.h"
+                },
+                "region": {
+                  "startLine": 1142,
+                  "startColumn": 5,
+                  "endLine": 1142,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$moveToImpl@V?$QList@VQVariant@@@@@QSequentialIterableImpl@QtMetaTypePrivate@@SAXPEBXPEAPEAXW4Position@01@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "函式 'qMetaTypeId<QtMetaTypePrivate::QPairVariantInterfaceImpl>' 是 constexpr，如果需要編譯時間評估，請將變數 'toId' 標記為 constexpr (con.5)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qmetatype.h"
+                },
+                "region": {
+                  "startLine": 2413,
+                  "startColumn": 15,
+                  "endLine": 2413,
+                  "endColumn": 79
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?registerConverter@?$IsMetaTypePair@U?$QPair@VQVariant@@V1@@@$00@QtPrivate@@SA_NH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "函式 'qMetaTypeId<QtMetaTypePrivate::QPairVariantInterfaceImpl>' 是 constexpr，如果需要編譯時間評估，請將變數 'vid' 標記為 constexpr (con.5)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qvariant.h"
+                },
+                "region": {
+                  "startLine": 742,
+                  "startColumn": 23,
+                  "endLine": 742,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?metaType@?$QVariantValueHelper@VQPairVariantInterfaceImpl@QtMetaTypePrivate@@@QtPrivate@@SA?AVQPairVariantInterfaceImpl@QtMetaTypePrivate@@AEBVQVariant@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.28.29335.0"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\HostX86\\x64\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x0015B1D0 -il C:\\Users\\Benson\\AppData\\Local\\Temp\\_CL_4bd56fd6ast -typedil -f main.cpp -Ze -D_MSC_EXTENSIONS -Zp16 -pc \\:/ -D_MSC_VER=1928 -D_MSC_FULL_VER=192829335 -D_MSC_BUILD=0 -D_M_AMD64=100 -ZILP448 -D_M_X64=100 -D_WIN64 -D_WIN32 -GR -D_CPPRTTI -I C:\\Users\\Benson\\Documents\\Run_CAPOO_Run\\x64\\Debug\\uic -I C:\\Users\\Benson\\Documents\\Run_CAPOO_Run\\x64\\Debug\\moc -I C:\\Qt\\5.15.2\\msvc2019_64\\include -I C:\\Qt\\5.15.2\\msvc2019_64\\include\\QtMultimedia -I C:\\Qt\\5.15.2\\msvc2019_64\\include\\QtWidgets -I C:\\Qt\\5.15.2\\msvc2019_64\\include\\QtGui -I C:\\Qt\\5.15.2\\msvc2019_64\\include\\QtANGLE -I C:\\Qt\\5.15.2\\msvc2019_64\\include\\QtNetwork -I C:\\Qt\\5.15.2\\msvc2019_64\\include\\QtCore -I C:\\include -I C:\\Qt\\5.15.2\\msvc2019_64\\mkspecs\\win32-msvc -I C:\\Users\\Benson\\Documents\\Run_CAPOO_Run\\x64\\Debug\\moc -I C:\\Users\\Benson\\Documents\\Run_CAPOO_Run\\x64\\Debug\\uic -nologo -W 1 -diagnostics:column -Ot -DCODE_ANALYSIS -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -EHs -D_CPPUNWIND -EHc -MDd -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -Zc:wchar_t -Zc:forScope -Fox64\\Debug\\main.obj -Fdx64\\Debug\\vc142.pdb -Gd -analyze:projectdirectory C:\\Users\\Benson\\Documents\\Run_CAPOO_Run -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\ucrt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\UnitTest\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\cppwinrt -I C:\\Users\\Benson\\Documents\\Run_CAPOO_Run\\Include\\um -MPdiagMutex 00000000000000C4",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qglobal.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qsysinfo.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qchar.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qnamespace.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qarraydata.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qbytearray.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qstring.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qmetatype.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qcoreevent.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qeventloop.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qinputmethod.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qmap.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qlocale.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qcolor.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qiodevice.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qdatastream.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qmatrix.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qtransform.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qpixelformat.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qimage.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qsharedpointer_impl.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qbrush.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qpalette.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qfont.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qsizepolicy.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qkeysequence.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qwidget.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtGui/qicon.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qtabwidget.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qmainwindow.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qaction.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Qt/5.15.2/msvc2019_64/include/QtCore/qvariant.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/benson/documents/run_capoo_run/main.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtwidgets/qapplication"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtwidgets/qapplication.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtwidgets/qtwidgetsglobal.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtgui/qtguiglobal.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qconfig.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qtcore-config.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qsystemdetection.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qprocessordetection.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qcompilerdetection.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qtypeinfo.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qlogging.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qflags.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qatomic.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qbasicatomic.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qatomic_cxx11.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qgenericatomic.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qglobalstatic.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qnumeric.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qversiontagging.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtgui/qtgui-config.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtwidgets/qtwidgets-config.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qcoreapplication.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qrefcount.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qstringliteral.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qstringalgorithms.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qstringview.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qobject.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qobjectdefs.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qobjectdefs_impl.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qlist.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qalgorithms.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qiterator.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qhashfunctions.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qpair.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qvector.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qcontainertools_impl.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qpoint.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qbytearraylist.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qstringlist.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qregexp.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qstringmatcher.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qscopedpointer.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qvarlengtharray.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qcontainerfwd.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qobject_impl.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtgui/qwindowdefs.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtgui/qwindowdefs_win.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qsize.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qmargins.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtgui/qcursor.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtgui/qguiapplication.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qhash.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qshareddata.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/benson/documents/run_capoo_run/runcapoorun.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtmultimedia/qsound"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtmultimedia/qsound.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtmultimedia/qtmultimediaglobal.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtmultimedia/qtmultimedia-config.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtwidgets/qmainwindow"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtgui/qpaintdevice.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qrect.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtgui/qrgb.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtgui/qrgba64.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtgui/qpolygon.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtgui/qregion.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qline.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtgui/qpixmap.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qsharedpointer.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtgui/qfontmetrics.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtgui/qfontinfo.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/benson/documents/run_capoo_run/grass.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/benson/documents/run_capoo_run/x64/debug/uic/ui_runcapoorun.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtcore/qvariant"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtwidgets/qmenubar"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtwidgets/qmenubar.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtwidgets/qmenu.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtwidgets/qactiongroup.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtwidgets/qstatusbar"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtwidgets/qstatusbar.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtwidgets/qtoolbar"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtwidgets/qtoolbar.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/qt/5.15.2/msvc2019_64/include/qtwidgets/qwidget"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        }
+      ]
+    }
+  ]
+}

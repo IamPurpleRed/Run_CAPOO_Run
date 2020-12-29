@@ -1,8 +1,8 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-<Qt_DEFINES_>UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;NDEBUG;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB</Qt_DEFINES_>
-<Qt_INCLUDEPATH_>C:\Users\Benson\OneDrive\??\2?\????\????\x64\Release\qmake\temp;C:\Qt\5.15.2\msvc2019_64\include;C:\Qt\5.15.2\msvc2019_64\include\QtWidgets;C:\Qt\5.15.2\msvc2019_64\include\QtGui;C:\Qt\5.15.2\msvc2019_64\include\QtANGLE;C:\Qt\5.15.2\msvc2019_64\include\QtCore;/include;C:\Qt\5.15.2\msvc2019_64\mkspecs\win32-msvc</Qt_INCLUDEPATH_>
-<Qt_LIBS_>C:\Qt\5.15.2\msvc2019_64\lib\Qt5Widgets.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Gui.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Core.lib;C:\Qt\5.15.2\msvc2019_64\lib\qtmain.lib;shell32.lib</Qt_LIBS_>
+<Qt_DEFINES_>UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;NDEBUG;QT_NO_DEBUG;QT_MULTIMEDIA_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB</Qt_DEFINES_>
+<Qt_INCLUDEPATH_>C:\Qt\5.15.2\msvc2019_64\include;C:\Qt\5.15.2\msvc2019_64\include\QtMultimedia;C:\Qt\5.15.2\msvc2019_64\include\QtWidgets;C:\Qt\5.15.2\msvc2019_64\include\QtGui;C:\Qt\5.15.2\msvc2019_64\include\QtANGLE;C:\Qt\5.15.2\msvc2019_64\include\QtNetwork;C:\Qt\5.15.2\msvc2019_64\include\QtCore;/include;C:\Qt\5.15.2\msvc2019_64\mkspecs\win32-msvc</Qt_INCLUDEPATH_>
+<Qt_LIBS_>C:\Qt\5.15.2\msvc2019_64\lib\Qt5Multimedia.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Widgets.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Gui.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Network.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Core.lib;C:\Qt\5.15.2\msvc2019_64\lib\qtmain.lib;shell32.lib</Qt_LIBS_>
 <Qt_LIBPATH_>C:\openssl\lib;C:\Utils\my_sql\mysql-5.7.25-winx64\lib;C:\Utils\postgresql\pgsql\lib</Qt_LIBPATH_>
 <QMake_QT_SYSROOT_></QMake_QT_SYSROOT_>
 <QMake_QT_INSTALL_PREFIX_>C:/Qt/5.15.2/msvc2019_64</QMake_QT_INSTALL_PREFIX_>
@@ -34,7 +34,7 @@
     <QtBkup_QtInstall
       >msvc2019</QtBkup_QtInstall>
     <QtBkup_QtModules
-      >core;gui;widgets</QtBkup_QtModules>
+      >core;gui;multimedia;widgets</QtBkup_QtModules>
     <QtBkup_QtPathBinaries
       >bin</QtBkup_QtPathBinaries>
     <QtBkup_QtPathLibraryExecutables

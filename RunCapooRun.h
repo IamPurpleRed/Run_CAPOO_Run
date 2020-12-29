@@ -1,6 +1,6 @@
 #pragma once
 
-#include <QSound>
+#include <QtMultimedia/QSound>
 #include <QtWidgets/QMainWindow>
 #include "grass.h"
 #include "ui_RunCapooRun.h"

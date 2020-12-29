@@ -1,5 +1,178 @@
-﻿  moc RunCapooRun.h
+﻿  Reading Qt configuration (C:/Qt/5.15.2/msvc2019_64/bin/qmake)
+  uic RunCapooRun.ui
+  rcc RunCapooRun.qrc
+  moc RunCapooRun.h
+   RCC: Warning: No resources in 'C:\Users\Benson\Documents\Run_CAPOO_Run\RunCapooRun.qrc'.
+  grass.cpp
   RunCapooRun.cpp
   main.cpp
+  qrc_RunCapooRun.cpp
   moc_RunCapooRun.cpp
-  Run_CAPOO_Run.vcxproj -> C:\Users\Benson\OneDrive\課務\2上\物件導向\期末專題\x64\Debug\Run_CAPOO_Run.exe
+  Run_CAPOO_Run.vcxproj -> C:\Users\Benson\Documents\Run_CAPOO_Run\x64\Debug\Run_CAPOO_Run.exe
+C:\Users\Benson\Documents\Run_CAPOO_Run\grass.cpp(9): warning C26495: 變數 'grass::grass_position' 未初始化。永遠將成員變數初始化 (type.6)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qglobal.h(660): warning C26451: 算術溢位: 對 4 位元組值使用運算子 '+'，然後將結果轉換為 8 位元組值。將值轉換為較廣的類型後，再呼叫運算子 '+' 以免發生溢位 (io.2)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qglobal.h(660): warning C26451: 算術溢位: 對 4 位元組值使用運算子 '+'，然後將結果轉換為 8 位元組值。將值轉換為較廣的類型後，再呼叫運算子 '+' 以免發生溢位 (io.2)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qglobal.h(660): warning C26451: 算術溢位: 對 4 位元組值使用運算子 '-'，然後將結果轉換為 8 位元組值。將值轉換為較廣的類型後，再呼叫運算子 '-' 以免發生溢位 (io.2)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qglobal.h(660): warning C26451: 算術溢位: 對 4 位元組值使用運算子 '-'，然後將結果轉換為 8 位元組值。將值轉換為較廣的類型後，再呼叫運算子 '-' 以免發生溢位 (io.2)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qsysinfo.h(226): warning C26812: 列舉類型 'QSysInfo::MacVersion' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(110): warning C26812: 列舉類型 'Qt::KeyboardModifier' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(169): warning C26812: 列舉類型 'Qt::MouseButton' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(177): warning C26812: 列舉類型 'Qt::Orientation' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(204): warning C26812: 列舉類型 'Qt::SplitBehaviorFlags' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(240): warning C26812: 列舉類型 'Qt::AlignmentFlag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(324): warning C26812: 列舉類型 'Qt::WindowType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(335): warning C26812: 列舉類型 'Qt::WindowState' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(355): warning C26812: 列舉類型 'Qt::ScreenOrientation' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(596): warning C26812: 列舉類型 'Qt::ImageConversionFlag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1255): warning C26812: 列舉類型 'Qt::DockWidgetArea' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1273): warning C26812: 列舉類型 'Qt::ToolBarArea' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1334): warning C26812: 列舉類型 'Qt::Edge' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1439): warning C26812: 列舉類型 'Qt::InputMethodQuery' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1474): warning C26812: 列舉類型 'Qt::InputMethodHint' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1525): warning C26812: 列舉類型 'Qt::DropAction' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1582): warning C26812: 列舉類型 'Qt::ItemFlag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1600): warning C26812: 列舉類型 'Qt::MatchFlag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1625): warning C26812: 列舉類型 'Qt::TextInteractionFlag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1677): warning C26812: 列舉類型 'Qt::TouchPointState' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1709): warning C26812: 列舉類型 'Qt::GestureFlag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1764): warning C26812: 列舉類型 'Qt::MouseEventFlag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1785): warning C26812: 列舉類型 'Qt::ScrollBarPolicy' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1786): warning C26812: 列舉類型 'Qt::FocusPolicy' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1787): warning C26812: 列舉類型 'Qt::ContextMenuPolicy' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1788): warning C26812: 列舉類型 'Qt::ArrowType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1789): warning C26812: 列舉類型 'Qt::ToolButtonStyle' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1790): warning C26812: 列舉類型 'Qt::PenStyle' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1791): warning C26812: 列舉類型 'Qt::PenCapStyle' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1792): warning C26812: 列舉類型 'Qt::PenJoinStyle' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1793): warning C26812: 列舉類型 'Qt::BrushStyle' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1794): warning C26812: 列舉類型 'Qt::FillRule' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1795): warning C26812: 列舉類型 'Qt::MaskMode' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1796): warning C26812: 列舉類型 'Qt::BGMode' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1797): warning C26812: 列舉類型 'Qt::ClipOperation' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1798): warning C26812: 列舉類型 'Qt::SizeMode' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1799): warning C26812: 列舉類型 'Qt::Axis' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1800): warning C26812: 列舉類型 'Qt::Corner' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1802): warning C26812: 列舉類型 'Qt::LayoutDirection' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1803): warning C26812: 列舉類型 'Qt::SizeHint' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1807): warning C26812: 列舉類型 'Qt::TextFlag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1816): warning C26812: 列舉類型 'Qt::TextFormat' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1817): warning C26812: 列舉類型 'Qt::TextElideMode' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1818): warning C26812: 列舉類型 'Qt::DateFormat' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1819): warning C26812: 列舉類型 'Qt::TimeSpec' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1820): warning C26812: 列舉類型 'Qt::DayOfWeek' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1821): warning C26812: 列舉類型 'Qt::CursorShape' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1822): warning C26812: 列舉類型 'Qt::GlobalColor' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1823): warning C26812: 列舉類型 'Qt::AspectRatioMode' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1824): warning C26812: 列舉類型 'Qt::TransformationMode' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1826): warning C26812: 列舉類型 'Qt::Key' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1827): warning C26812: 列舉類型 'Qt::ShortcutContext' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1830): warning C26812: 列舉類型 'Qt::ItemSelectionMode' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1831): warning C26812: 列舉類型 'Qt::ItemSelectionOperation' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1833): warning C26812: 列舉類型 'Qt::CheckState' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1834): warning C26812: 列舉類型 'Qt::ItemDataRole' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1835): warning C26812: 列舉類型 'Qt::SortOrder' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1836): warning C26812: 列舉類型 'Qt::CaseSensitivity' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1842): warning C26812: 列舉類型 'Qt::WindowModality' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1843): warning C26812: 列舉類型 'Qt::WidgetAttribute' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1844): warning C26812: 列舉類型 'Qt::ApplicationAttribute' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1847): warning C26812: 列舉類型 'Qt::FocusReason' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1851): warning C26812: 列舉類型 'Qt::EnterKeyType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1856): warning C26812: 列舉類型 'Qt::ConnectionType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1857): warning C26812: 列舉類型 'Qt::ApplicationState' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1859): warning C26812: 列舉類型 'Qt::GestureState' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1860): warning C26812: 列舉類型 'Qt::GestureType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1861): warning C26812: 列舉類型 'Qt::NativeGestureType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1863): warning C26812: 列舉類型 'Qt::CursorMoveStyle' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1864): warning C26812: 列舉類型 'Qt::TimerType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1865): warning C26812: 列舉類型 'Qt::ScrollPhase' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1866): warning C26812: 列舉類型 'Qt::MouseEventSource' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1868): warning C26812: 列舉類型 'Qt::ChecksumType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h(1870): warning C26812: 列舉類型 'Qt::TabFocusBehavior' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qchar.h(101): warning C26812: 列舉類型 'QChar::SpecialCharacter' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qchar.h(451): warning C26812: 列舉類型 'QChar::Category' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qchar.h(452): warning C26812: 列舉類型 'QChar::Direction' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qchar.h(453): warning C26812: 列舉類型 'QChar::JoiningType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qchar.h(460): warning C26812: 列舉類型 'QChar::Joining' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qchar.h(474): warning C26812: 列舉類型 'QChar::Decomposition' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qchar.h(482): warning C26812: 列舉類型 'QChar::Script' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qchar.h(484): warning C26812: 列舉類型 'QChar::UnicodeVersion' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qarraydata.h(126): warning C26812: 列舉類型 'QArrayData::AllocationOption' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qbytearray.h(492): warning C26812: 列舉類型 'QByteArray::Base64Option' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qstring.h(1595): warning C26812: 列舉類型 'QString::SectionFlag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qstring.h(2095): warning C26812: 列舉類型 'QtPrivate::ArgBase::Tag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qmetatype.h(734): warning C26812: 列舉類型 'QMetaType::ExtensionFlag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qmetatype.h(786): warning C26812: 列舉類型 'QMetaType::TypeFlag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qmetatype.h(1101): warning C26812: 列舉類型 'QtMetaTypePrivate::IteratorCapability' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qcolor.h(71): warning C26812: 列舉類型 'QColor::Spec' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qcolor.h(265): warning C26495: 變數 'QColor::CT::argb' 未初始化。永遠將成員變數初始化 (type.6)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qiodevice.h(185): warning C26812: 列舉類型 'QIODevice::OpenModeFlag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qdatastream.h(227): warning C26812: 列舉類型 'QDataStream::Status' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qdatastream.h(372): warning C26812: 列舉類型 'QDataStream::ByteOrder' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qmatrix.h(60): warning C26495: 變數 'QMatrix::_dy' 未初始化。永遠將成員變數初始化 (type.6)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qmatrix.h(70): warning C26495: 變數 'QMatrix::_dy' 未初始化。永遠將成員變數初始化 (type.6)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qtransform.h(219): warning C26812: 列舉類型 'QTransform::TransformationType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qpixelformat.h(98): warning C26812: 列舉類型 'QPixelFormat::Field' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qpixelformat.h(178): warning C26812: 列舉類型 'QPixelFormat::ColorModel' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qpixelformat.h(209): warning C26812: 列舉類型 'QPixelFormat::AlphaUsage' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qpixelformat.h(210): warning C26812: 列舉類型 'QPixelFormat::AlphaPosition' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qpixelformat.h(211): warning C26812: 列舉類型 'QPixelFormat::AlphaPremultiplied' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qpixelformat.h(212): warning C26812: 列舉類型 'QPixelFormat::TypeInterpretation' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qpixelformat.h(213): warning C26812: 列舉類型 'QPixelFormat::ByteOrder' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qpixelformat.h(215): warning C26812: 列舉類型 'QPixelFormat::YUVLayout' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qimage.h(139): warning C26812: 列舉類型 'QImage::Format' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qsharedpointer_impl.h(146): warning C26495: 變數 'QtSharedPointer::ExternalRefCountData::destroyer' 未初始化。永遠將成員變數初始化 (type.6)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qbrush.h(188): warning C26812: 列舉類型 'QGradient::Type' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qbrush.h(195): warning C26812: 列舉類型 'QGradient::Spread' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qbrush.h(203): warning C26812: 列舉類型 'QGradient::CoordinateMode' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qbrush.h(382): warning C26812: 列舉類型 'QGradient::Preset' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qpalette.h(89): warning C26812: 列舉類型 'QPalette::ColorGroup' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qpalette.h(104): warning C26812: 列舉類型 'QPalette::ColorRole' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qfont.h(71): warning C26812: 列舉類型 'QFont::StyleHint' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qfont.h(91): warning C26812: 列舉類型 'QFont::StyleStrategy' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qfont.h(99): warning C26812: 列舉類型 'QFont::HintingPreference' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qfont.h(113): warning C26812: 列舉類型 'QFont::Weight' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qfont.h(120): warning C26812: 列舉類型 'QFont::Style' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qfont.h(134): warning C26812: 列舉類型 'QFont::Stretch' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qfont.h(143): warning C26812: 列舉類型 'QFont::Capitalization' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qfont.h(149): warning C26812: 列舉類型 'QFont::SpacingType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qfont.h(173): warning C26812: 列舉類型 'QFont::ResolveProperties' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qsizepolicy.h(91): warning C26812: 列舉類型 'QSizePolicy::Policy' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qsizepolicy.h(116): warning C26812: 列舉類型 'QSizePolicy::ControlType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qkeysequence.h(149): warning C26812: 列舉類型 'QKeySequence::StandardKey' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qwidget.h(750): warning C26812: 列舉類型 'QWidget::RenderFlag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qicon.h(79): warning C26812: 列舉類型 'QIcon::Mode' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qtabwidget.h(111): warning C26812: 列舉類型 'QTabWidget::TabPosition' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qtabwidget.h(122): warning C26812: 列舉類型 'QTabWidget::TabShape' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qmainwindow.h(90): warning C26812: 列舉類型 'QMainWindow::DockOption' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qmap.h(93): warning C26812: 列舉類型 'QMapNodeBase::Color' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qcoreevent.h(295): warning C26812: 列舉類型 'QEvent::Type' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qeventloop.h(85): warning C26812: 列舉類型 'QEventLoop::ProcessEventsFlag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qinputmethod.h(87): warning C26812: 列舉類型 'QInputMethod::Action' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qlocale.h(949): warning C26812: 列舉類型 'QLocale::Language' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qlocale.h(950): warning C26812: 列舉類型 'QLocale::Country' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qlocale.h(951): warning C26812: 列舉類型 'QLocale::Script' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qlocale.h(959): warning C26812: 列舉類型 'QLocale::MeasurementSystem' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qlocale.h(1194): warning C26812: 列舉類型 'QLocale::NumberOption' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qaction.h(90): warning C26812: 列舉類型 'QAction::MenuRole' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qaction.h(94): warning C26812: 列舉類型 'QAction::Priority' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qurl.h(376): warning C26812: 列舉類型 'QUrl::ComponentFormattingOption' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qurl.h(380): warning C26812: 列舉類型 'QUrl::UrlFormattingOption' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qfiledevice.h(150): warning C26812: 列舉類型 'QFileDevice::Permission' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qvector2d.h(60): warning C26495: 變數 'QVector2D::v' 未初始化。永遠將成員變數初始化 (type.6)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qtouchdevice.h(59): warning C26812: 列舉類型 'QTouchDevice::DeviceType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qtouchdevice.h(70): warning C26812: 列舉類型 'QTouchDevice::CapabilityFlag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qevent.h(278): warning C26812: 列舉類型 'QTabletEvent::TabletDevice' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qevent.h(280): warning C26812: 列舉類型 'QTabletEvent::PointerType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qevent.h(496): warning C26812: 列舉類型 'QPlatformSurfaceEvent::SurfaceEventType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qevent.h(567): warning C26812: 列舉類型 'QContextMenuEvent::Reason' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qevent.h(589): warning C26812: 列舉類型 'QInputMethodEvent::AttributeType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qevent.h(1040): warning C26812: 列舉類型 'QTouchEvent::TouchPoint::InfoFlag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qtextoption.h(66): warning C26812: 列舉類型 'QTextOption::TabType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qtextoption.h(105): warning C26812: 列舉類型 'QTextOption::WrapMode' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qtextoption.h(149): warning C26812: 列舉類型 'QTextOption::Flag' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtGui\qpainter.h(98): warning C26812: 列舉類型 'QPainter::RenderHint' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qvariant.h(742): warning C26498: 函式 'qMetaTypeId<QPair<QVariant,QVariant> >' 是 constexpr，如果需要編譯時間評估，請將變數 'vid' 標記為 constexpr (con.5)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qmetatype.h(1884): warning C26812: 列舉類型 'QtPrivate::MetaTypeDefinedHelper<QtMetaTypePrivate::QSequentialIterableImpl,1>::DefinedType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qmetatype.h(1847): warning C26812: 列舉類型 'QtPrivate::MetaTypeDefinedHelper<QPair<QVariant,QVariant>,1>::DefinedType' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qmetatype.h(1142): warning C26812: 列舉類型 'QtMetaTypePrivate::QSequentialIterableImpl::Position' 不限範圍。偏好 'enum class' 過於 'enum' (Enum.3)。
+C:\Qt\5.15.2\msvc2019_64\include\QtCore\qmetatype.h(2413): warning C26498: 函式 'qMetaTypeId<QtMetaTypePrivate::QPairVariantInterfaceImpl>' 是 constexpr，如果需要編譯時間評估，請將變數 'toId' 標記為 constexpr (con.5)。
