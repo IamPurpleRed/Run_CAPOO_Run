@@ -33,8 +33,6 @@ class RunCapooRun : public QMainWindow {
     int ending_counter;                                                // for layouting ending window usage
     int score;                                                         // score usage, s0:the right most digit, s1: the second digit
     int score_capoo;                                                   // score usage, record capoo's status
-    QSound* wav0;// gaming bgm
-    QSound* wav1;// menu bgm
-    QSound* wav2;    // click sound
-    bool sound[10];  // check if bgm is playing or not
+    QSound* playing_bgm;
+    bool sound;  // check if bgm is playing or not
 };
