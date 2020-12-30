@@ -15,7 +15,7 @@ grass::grass() {
 void grass::create() {
     
     
-    grass_num = rand() % 2 + 3;  // TODO: 之後要改成隨機取2~4
+    grass_num = rand() % 2 + 3;
     while (grass_num) {
         grass_position = rand() % 5;
         if (road[grass_position] == 1) road[grass_position] = 0;

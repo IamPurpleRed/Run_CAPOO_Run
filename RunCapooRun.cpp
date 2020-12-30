@@ -247,6 +247,7 @@ void RunCapooRun::paintEvent(QPaintEvent*) {
             frequency = 100;
             create_counter = 0;
             movingTimer = 0;
+            score = -3;
         }
 
         // background pic
@@ -412,7 +413,14 @@ void RunCapooRun::paintEvent(QPaintEvent*) {
                 p1.load(".\\src\\gameover\\gameover\\13.png");
             else if (ending_counter >= 28) {
                 window = 0;
-                startClick = 0;
+                startClick = 0;      // click of the start botton
+                pos = 2;             // capoo's position (0~4), x = 225  ps.the (center, bottom) of the window is (600, 720)
+                capoo = 1;           // capoo's status
+                frequency = 100;     // initial frequency
+                countdown = 0;       // for countdown window usage
+                movingTimer = 0;     // counting time (1 time per second
+                ending_counter = 0;  // initialize counter
+                score = -3;          // initialize score
             }
         }
         // *yes*
