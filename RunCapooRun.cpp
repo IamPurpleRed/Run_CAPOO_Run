@@ -22,9 +22,13 @@ RunCapooRun::RunCapooRun(QWidget* parent)
     ending_counter = 0;  // initialize counter
     score = -3;
     score_capoo = 1;
-    sound = false;
-    playing_bgm = new QSound(".\\src\\sounds\\Trap Adventures 2 - Water Levels Music.wav", this);
-    playing_bgm->setLoops(-1);  // 循環次數 -1代表無限循環
+    // -----below is for QSound initialization-----
+    for (int i = 0; i < 10; i++) sound[i] = false;
+    wav0 = new QSound(".\\src\\sounds\\Trap Adventures 2 - Water Levels Music.wav", this);
+    wav0->setLoops(-1);  // 循環次數 -1代表無限循環
+    wav1 = new QSound(".\\src\\sounds\\contedefees_0124.wav", this);
+    wav1->setLoops(-1);
+    wav2 = new QSound(".\\src\\sounds\\button sound effect.wav", this);
 }
 
 void RunCapooRun::paintEvent(QPaintEvent*) {
@@ -37,6 +41,12 @@ void RunCapooRun::paintEvent(QPaintEvent*) {
         // show welcome pic
         pixmap.load(".\\src\\main.png");
         painter.drawPixmap(0, 0, pixmap);
+
+        // bgm
+        if (!sound[1]) {
+            wav1->play();
+            sound[1] = true;
+        }
 
         // show start button
         pixmap.load(".\\src\\button\\start.png");
@@ -60,9 +70,11 @@ void RunCapooRun::paintEvent(QPaintEvent*) {
         painter.drawPixmap(0, 0, pixmap);
 
         // background music
-        if (!sound) {
-            playing_bgm->play();
-            sound = true;
+        wav1->stop();
+        sound[1] = false;
+        if (!sound[0]) {
+            wav0->play();
+            sound[0] = true;
         }
 
         if (score >= 0) {
@@ -355,8 +367,8 @@ void RunCapooRun::paintEvent(QPaintEvent*) {
     else if (window == 3) {
         // stop playing_bgm
         if (sound) {
-            playing_bgm->stop();
-            sound = false;
+            wav0->stop();
+            sound[0] = false;
         }
 
         killTimer(timer);
@@ -456,8 +468,11 @@ void RunCapooRun::mouseReleaseEvent(QMouseEvent* evt) {
 
     //　start button pressed
     if (!window) {
+        wav2->play();
         QPoint point = evt->pos();
-        if ((point.x() > 450 && point.x() < 750) && (point.y() > 470 && point.y() < 550)) startClick = (!startClick);
+        if ((point.x() > 450 && point.x() < 750) && (point.y() > 470 && point.y() < 550)) {
+            startClick = (!startClick);
+        }
     }
 
     // gaming operations
