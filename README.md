@@ -2,6 +2,8 @@ Run CAPOO Run !!
 ===
 ###### tags:`GitHub`, `schoolwork`, `OOP`
 
+![](https://i.imgur.com/DfLFZAn.png)
+
 ## Team Members
 * Merge Code: 林子閎
 * Qt Team: 柳瀚揚、陳宜杰
@@ -20,3 +22,7 @@ Run CAPOO Run !!
 **Make sure all of the header files & source files be added in the Visual Studio project before compiling on vs2019**
 
 ![](https://i.imgur.com/Cdiw5ku.png)
+
+## Release Log
+* **version 1.0 (2020/12/30):**
+    * Baic game Architecture
